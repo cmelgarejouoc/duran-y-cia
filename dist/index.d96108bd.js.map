@@ -1,0 +1,1 @@
+{"mappings":"AACAA,QAAQC,IAAG","sources":["UOC/M4.257 Eines HTML i CSS/Moduls_UOC/duran-y-cia/src/js/app.js"],"sourcesContent":["const name = 'world';\nconsole.log(`Hello ${name}`);"],"names":["console","log"],"version":3,"file":"index.d96108bd.js.map"}

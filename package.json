@@ -1,0 +1,48 @@
+{
+  "name": "duran-y-cia",
+  "version": "1.0.0",
+  "description": "duran&cia web",
+  "source": [
+    "src/index.html", 
+    "src/el-grup.html", 
+    "src/treballs.html", 
+    "src/con-esa-pesada-costumbre-de-siempre-sonreir.html", 
+    "src/material-de-derribo.html", 
+    "src/jorge-embaucador-videoclip.html", 
+    "src/videos.html", 
+    "src/shop.html", 
+    "src/fonts.html"
+  ],
+  "browserslist": "> 0.5%, last 6 versions",
+  "scripts": {
+    "parcel:dev": "parcel",
+    "parcel:build": "parcel build",
+    "clean": "rimraf dist .parcel-cache",
+    "start": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean parcel:build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmelgarejouoc/duran-y-cia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmelgarejouoc/duran-y-cia/issues"
+  },
+  "homepage": "https://github.com/cmelgarejouoc/duran-y-cia#readme",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.1.3",
+    "autoprefixer": "^10.4.4",
+    "npm-run-all": "^4.1.5",
+    "parcel": "latest",
+    "postcss": "^8.4.12",
+    "postcss-import": "^14.0.2",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "postcss-normalize-whitespace": "^5.1.1",
+    "postcss-url": "^10.1.3"
+  }
+}

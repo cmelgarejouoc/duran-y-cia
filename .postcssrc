@@ -1,0 +1,11 @@
+{
+  "syntax": 'postcss-scss',
+  "plugins": {
+    "autoprefixer": {
+      "grid": true
+    },
+    "postcss-url": true,
+    "postcss-import": true,
+    "postcss-normalize-whitespace": true
+  }
+}
