@@ -1,9 +1,463 @@
-h1 {
-  color: hotpink;
-  font-family: cursive;
+/*
+	PAC1 - Carles Melgarejo
+*/
+
+/* GLOBAL STYLES */
+*{
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
 }
-body {
-  height: 100vh;
-  color: #1f1f1f;
-  background: linear-gradient(to bottom, #f1f1f1, #333333);
+
+html {
+	font-family: 'Raleway', sans-serif;
+	font-size: 2.27vw;
+	color: rgb(0, 0, 0);
+	box-sizing: border-box;
 }
+
+html body{
+	padding: 0;
+	cursor: initial;
+}
+
+abbr{
+	text-decoration: none;
+}
+
+img{
+	max-width: 100%;
+	display: block;
+}
+
+ul{
+	list-style: none;
+}
+
+picture,
+picture img{
+	display: block;
+}
+
+h1 i,
+h2 i{
+	font-style: initial;
+}
+
+/* HEADER STYLES */
+	header{
+	}
+
+	header > div > a{
+		display: block;
+		width: max-content;
+		margin: 5.2rem auto 4rem auto;
+	}
+
+	header > div > a img{
+		width: 27.1rem;
+	}
+
+	/* Customize hamburger-menu package */
+	nav.hamburger-menu aside {
+		width: 267px;
+		background-color: #F1E9E9;
+	}
+	nav.hamburger-menu {
+		color: #5F030E;
+		background-color: rgb(255,255,255);
+	}
+
+	nav.hamburger-menu aside > img{
+		position: absolute;
+		top: 1.5rem;
+		right: 1.5rem;
+	}
+
+	nav.hamburger-menu aside > ul{
+		background-image: url("../images/separador-vermell.svg");
+		background-repeat: no-repeat;
+		background-position: bottom left;
+		margin: 8rem 0 0 2.2rem;
+		padding: 0 0 1rem 0;
+	}
+
+	nav.hamburger-menu aside > ul:nth-of-type(2){
+		background-image: url("../images/separador-gris.svg");
+		margin-top: 22rem;
+	}
+
+	nav.hamburger-menu aside > ul:nth-of-type(2) li a,
+	nav.hamburger-menu aside > ul:nth-of-type(2) li span{
+		color: #000000;
+		font-size: 1.7rem;
+	}
+
+	nav.hamburger-menu aside ul li a, 
+	nav.hamburger-menu aside ul li span{
+		font-size: 2.1rem;
+		padding: 0 0 0 0;
+		margin: 0 0 1.3rem 1rem;
+		max-width: max-content;
+	}
+
+	nav.hamburger-menu aside ul li.current {
+		border-color: transparent;
+		background-color: #F1E9E9;
+	}
+	nav.hamburger-menu aside ul li.current > span,
+	nav.hamburger-menu aside ul li.current > a,
+	nav.hamburger-menu aside ul li > span:hover,
+	nav.hamburger-menu aside ul li > a:hover {
+        color: rgba(0,0,0,0.5);
+		background-color: #F1E9E9;
+	}
+	nav.hamburger-menu a.hamburger{
+		font-size: 3rem;
+		padding: 2rem 1.4rem;
+	}
+
+/* FOOTER STYLES */
+	footer{
+		background-color: #000;
+		color: #fff;
+		text-align: center;
+		font-size: 1.6rem;
+		font-weight: 600;
+		padding: 2.6rem 4rem 1.4rem;
+	}
+
+	footer > div > ul{
+		list-style: none;
+	}
+
+	footer > div > ul:nth-of-type(1) li a{
+		color: #fff;
+		text-decoration: none;
+		line-height: 1.5;
+		max-width: max-content;
+		display: block;
+		border-bottom: 1px solid transparent;
+		margin-bottom: 0.2rem;
+	}
+
+	footer > div > ul:nth-of-type(1) li a:hover{
+		color: rgb(189, 55, 0);
+	}
+
+	footer > div > ul:nth-of-type(2){
+		margin: 4.4rem 0 2.4rem 0;
+	}
+
+	footer > div > ul:nth-of-type(2) li{
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	footer > div > ul:nth-of-type(2) li a,
+	footer > div > ul:nth-of-type(2) li a img{
+		display: block;
+	}
+
+	footer > div > ul:nth-of-type(2) li a:hover img{
+		opacity: 0.7;
+	}
+
+	footer > div > ul:nth-of-type(2) li:nth-of-type(1) a{
+		display: block;
+		width: 2rem;
+		margin-top: 0.3rem;
+	}
+
+	footer > div > ul:nth-of-type(2) li:nth-of-type(2) a{
+		width: 3.4rem;
+		margin-top: 0;
+	}
+
+	footer > div > p{
+		font-weight: 500;
+		font-size: 1.4rem;
+		line-height: 1.6;
+		margin-bottom: 1.4rem;	
+	}
+
+	footer > div > a:last-child{
+		display: none;
+	}
+
+/* MAIN STYLES */
+	main{
+
+	}
+
+/* HOME STYLES */
+	.home-page main{
+		margin: 0;
+		padding: 0;
+	}
+
+	.home-page main > section:nth-of-type(1){
+		background-color: #F1E9E9;
+		padding: 4rem 4rem;
+	}
+
+	.home-page main > section:nth-of-type(1) h1{
+		font-size: 2rem;
+		color: #5F030E;
+		margin: 0 0 2.3rem 0;
+	}
+
+	.home-page main > section:nth-of-type(1) > h2{
+		font-weight: 600;
+		font-size: 1.6rem;
+		line-height: 1.4;
+		color: #5F030E;
+		margin: 0 0 3.3rem 0;
+	}
+
+	.home-page main > section:nth-of-type(1) > p{
+		font-size: 1.6rem;
+		line-height: 1.5;
+		margin: 0 0 3rem 0;
+	}
+
+	.home-page main > section:nth-of-type(1) > a{
+		font-weight: 600;
+		font-size: 1.6rem;
+		line-height: 1.4;
+		color: #5F030E;
+		margin: 0;
+		text-decoration: none;
+		border-bottom: 1px dotted #5F030E;
+	}
+
+	.home-page main > section:nth-of-type(1) > a:hover{
+		color: rgba(0,0,0,0.5); 
+	}
+
+	.home-page main > section:nth-of-type(2) > iframe{
+		width: 100vw;
+		height: 56.3vw;
+	}
+
+	.home-page main > section:nth-of-type(3){
+		padding: 4rem 4rem;
+		clear: both;
+	}
+
+	.home-page main > section:nth-of-type(3) > h2{
+		font-size: 2rem;
+		color: #5F030E;
+		margin: 0 0 2.3rem 0;
+	}
+
+	.home-page main > section:nth-of-type(3) article > img{
+		width: 53%;
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 0 2.4rem 0;
+	}
+
+	.home-page main > section:nth-of-type(3) article > div{
+		width: 46%;
+		margin: 0;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.home-page main > section:nth-of-type(3) article > div > h3 a{
+		font-weight: 600;
+		font-size: 1.8rem;
+		line-height: 1.4;
+		color: #5F030E;
+		margin: 0 0 2.3rem 1.7rem;
+		text-decoration: none;
+		display: block;
+	}
+
+	.home-page main > section:nth-of-type(3) article > div > h3 a:hover{
+		color: rgba(0,0,0,0.5);
+	}
+
+	.home-page main > section:nth-of-type(3) article > div > p{
+		font-weight: 500;
+		font-size: 1.8rem;
+		line-height: 1.4;
+		margin: 0 0 3.3rem 1.7rem;
+		text-decoration: none;
+	}
+
+	.home-page main > section:nth-of-type(3) article > a{
+		font-weight: 600;
+		font-size: 1.6rem;
+		line-height: 1.4;
+		color: #5F030E;
+		margin: 0;
+		text-decoration: none;
+		border-bottom: 1px dotted #5F030E;
+	}
+
+	.home-page main > section:nth-of-type(3) article > a:hover{
+		color: rgba(0,0,0,0.5); 
+	}
+
+/* PRESENTACIÓ STYLES */
+	.presentacio-page main{
+		margin: 0;
+		padding: 0;
+	}
+
+	.presentacio-page main > section:nth-of-type(1){
+		background-color: #F1E9E9;
+		padding: 4rem 4rem 2rem 4rem;
+	}
+
+	.presentacio-page main > section:nth-of-type(1) h1{
+		font-size: 2rem;
+		color: #5F030E;
+		margin: 0 0 2.3rem 0;
+	}
+
+	.presentacio-page main > section:nth-of-type(1) > p{
+		font-size: 1.6rem;
+		line-height: 1.5;
+		margin: 0 0 3rem 0;
+	}
+
+	.presentacio-page main > section:nth-of-type(2){
+		padding: 4rem 4rem 2rem 4rem;
+	}
+
+	.presentacio-page main > section:nth-of-type(2) h2{
+		color: #5F030E;
+		font-size: 1.6rem;
+		line-height: 1.5;
+		margin: 0 0 3rem 0;
+		font-weight: 600;
+	}
+
+	.presentacio-page main > section:nth-of-type(2) > p{
+		font-size: 1.6rem;
+		line-height: 1.5;
+		margin: 3rem 0 3rem 0;
+	}
+
+	.presentacio-page main > section:nth-of-type(2) > iframe{
+		width: 81.8vw;
+		height: 49.3vw;
+	}
+
+/* LLISTAT TREBALLS STYLES */
+	.llistat-treballs-page main{
+		margin: 0;
+		padding: 0;
+	}
+
+	.llistat-treballs-page main > section:nth-of-type(1){
+		background-color: #F1E9E9;
+		padding: 4rem 4rem 1rem 4rem;
+	}
+
+	.llistat-treballs-page main > section:nth-of-type(1) h1{
+		font-size: 2rem;
+		color: #5F030E;
+		margin: 0 0 2.3rem 0;
+	}
+
+	.llistat-treballs-page main > section:nth-of-type(1) div:nth-of-type(2n){
+		padding: 1.8rem 1.5rem;
+		background-color: #ffffff;
+		margin: 0 0 4rem 0;
+	}
+
+	.llistat-treballs-page main > section:nth-of-type(1) div:nth-of-type(2n) h2{
+		font-size: 2rem;
+		color: #5F030E;
+	}
+
+	.llistat-treballs-page main > section:nth-of-type(1) div:nth-of-type(2n) h2 span{
+		font-weight: 500;
+	}
+
+	.llistat-treballs-page main > section:nth-of-type(1) div:nth-of-type(2n) > a{
+		font-weight: 600;
+		font-size: 1.6rem;
+		line-height: 1.4;
+		color: #5F030E;
+		text-decoration: none;
+		border-bottom: 1px dotted #5F030E;
+		margin: 1.5rem 0 0 0;
+		display: block;
+		width: max-content;
+	}
+
+	.llistat-treballs-page main > section:nth-of-type(1) div:nth-of-type(2n) > a:hover{
+		color: rgba(0,0,0,0.5); 
+	}
+
+/* DETALL TREBALL STYLES */
+	.detall-treball-page main{
+		margin: 0;
+		padding: 0;
+		background-color: #F1E9E9;
+	}
+
+	.detall-treball-page main > nav{
+		padding: 4.5rem 2.5rem 2.5rem;
+	}
+
+	.detall-treball-page main > section:nth-of-type(1){
+		margin: 0 2.5rem 2.5rem;
+	}
+
+	.detall-treball-page main > section:nth-of-type(1) > div{
+		background-color: #ffffff;
+		margin: 0 0 3rem 0;
+	}
+
+	.detall-treball-page main > section:nth-of-type(1) blockquote {
+		background-color: rgb(255,255,255);
+		border-left: 5px solid rgb(189, 55, 0);
+		font-size: 1.6rem;
+		line-height: 1.5;
+		margin-bottom: 3.2rem;
+		padding: 1.8rem 1.7rem 1.4rem;
+	}
+
+	.detall-treball-page main > section:nth-of-type(1) blockquote p {
+		margin-bottom: 1.6rem;
+		font-style: italic;
+	}
+
+	.detall-treball-page main > section:nth-of-type(1) blockquote cite {
+		font-weight: 600;
+	}
+
+	.detall-treball-page main > section:nth-of-type(2){
+		background-color: #ffffff;
+	}
+
+/* VÍDEOS STYLES */
+	.videos-page main{
+		margin: 0;
+		padding: 0;
+	}
+
+/* ENLLAÇOS STYLES */
+	.enllacos-page main{
+		margin: 0;
+		padding: 0;
+	}
+
+/* MEDIA QUERIES */
+	@media screen and (min-width: 960px){
+		html {
+			font-size: 10px;
+		}
+	}
+
+	@media screen and (min-width: 667px){
+		html body{
+			cursor: initial;
+		}
+	}

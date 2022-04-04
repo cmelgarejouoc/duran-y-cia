@@ -3,15 +3,14 @@
   "version": "1.0.0",
   "description": "duran&cia web",
   "source": [
-    "src/index.html", 
-    "src/el-grup.html", 
-    "src/treballs.html", 
-    "src/con-esa-pesada-costumbre-de-siempre-sonreir.html", 
-    "src/material-de-derribo.html", 
-    "src/jorge-embaucador-videoclip.html", 
-    "src/videos.html", 
-    "src/shop.html", 
-    "src/fonts.html"
+    "src/index.html",
+    "src/presentacio.html",
+    "src/llistat-treballs.html",
+    "src/con-esa-pesada-costumbre-de-siempre-sonreir.html",
+    "src/material-de-derribo.html",
+    "src/jorge-embaucador.html",
+    "src/videos.html",
+    "src/enllacos.html"
   ],
   "browserslist": "> 0.5%, last 6 versions",
   "scripts": {
@@ -42,6 +41,7 @@
     "rimraf": "^3.0.2"
   },
   "dependencies": {
+    "hamburger-menu": "^0.4.0",
     "postcss-normalize-whitespace": "^5.1.1",
     "postcss-url": "^10.1.3"
   }

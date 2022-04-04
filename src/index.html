@@ -1,14 +1,139 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>My First Parcel App</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <script type="module" src="js/app.js"></script>
-  </head>
-  <body>
-    <h1>Prova a Netlify 2!</h1>
+<!DOCTYPE html>
+<html lang="ca-ES">
+	<head>
+		<title>Inici - Duran&Cia</title>
+		
+		<meta charset="utf-8">
+		<meta name="author" content="Carles Melgarejo Vila">
+		<meta name="description" content="Pàgina web de Duran&Cia.">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <a href="el-grup.html">El grup</a>
-  </body>
+		<link rel="icon" href="images/icon.png" type="image/x-icon">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,600;0,800;1,200;1,300;1,400&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hamburger-menu@0.3/dist/hamburger-menu.min.css" >
+
+		<script src=https://cdn.jsdelivr.net/npm/jquery@3.6/dist/jquery.min.js></script>
+		<script src=https://cdn.jsdelivr.net/npm/hamburger-menu@0.3/dist/hamburger-menu.min.js></script>
+
+		<link rel="stylesheet" href="css/styles.css" />
+		<script type="module" src="js/app.js"></script>
+	</head>
+
+	<body class="home-page">
+		<header id="top">
+			<div>
+				<a href="index.html">
+					<img src="images/logo-duran-cia.svg" alt="Logotipo">
+				</a>
+
+				<nav class=hamburger-menu>
+					<a class=hamburger href=#>&#9776;</a>
+					<aside>
+						<img src="images/close.svg" alt="" class="close">
+
+						<ul>
+							<li><a href="presentacio.html">Presentació</a></li>
+							<li><a href="llistat-treballs.html">Treballs</a></li>
+							<li><a href="videos.html">Vídeos</a></li>
+						</ul>
+
+						<ul>	
+							<li><a href="enllacos.html">Enllaços</a></li>
+						</ul>
+				   </aside>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<header>
+				<picture>
+					<source media="(min-width:960px)" srcset="images/d&c-bikini-moment-1-d.jpg">
+					<img src="images/d&c-bikini-moment-1-m.jpg" alt="Duran&Cia al Bikini" title="">
+				</picture>
+			</header>
+
+			<section>
+				<h1>
+					Duran & Cia, <i lang="en">rock</i> en estat pur
+				</h1>
+
+				<h2>
+					Pàgina del grup de <i lang="en">rock</i> de Barcelona, 
+					Duran&Cia, format al 2004 en aquesta ciutat.
+				</h2>
+
+				<p>
+					Experiència i experimentació, espontaneïtat i 
+					contundència, solvència i risc, calma i energia;  
+					barreja d’idiomes (català i castellà), barreja 
+					d’estils (<i lang="en">pop</i>, <i lang="en">rock</i>, <i lang="en">funk</i>) i, sobretot, un grup 
+					personal i intransferible.
+				</p>
+
+				<a href="presentacio.html">
+					+ Llegir-ne més
+				</a>
+			</section>
+
+			<section>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/O6QTaO1TD6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</section>
+
+			<section>
+				<h2>
+					Últims treballs
+				</h2>
+
+				<article>
+					<img src="images/con-esa-pesada-costumbre-de-siempre-sonreir.jpg" alt="CD Con esa pesada costumbre de siempre sonreír" title="">
+
+					<div>
+						<h3>
+							<a href="con-esa-pesada-costumbre-de-siempre-sonreir.html">
+								Con esa pesada costumbre de siempre sonreír
+							</a>
+						</h3>
+
+						<p>
+							2012. 
+							Autoproducció.
+						</p>
+					</div>
+
+					<a href="llistat-treballs.html">
+						+ Veure més treballs
+					</a>
+				</article>
+			</section>
+		</main>
+
+		<footer>
+			<div>
+				<ul>
+					<li><a href="presentacio.html">Presentació</a></li>
+					<li><a href="enllacos.html">Enllaços</a></li>
+				</ul>
+
+				<ul>
+					<li><a href="https://www.facebook.com/DuranCia-156336397420" target="_blank"><img src="images/facebook-icon.svg" alt="Facebook"></a></li>
+					<li><a href="https://www.youtube.com/user/DuranYCia/videos" target="_blank"><img src="images/youtube-icon.svg" alt="Youtube"></a></li>
+				</ul>
+				
+				<p>
+					Activitat realitzada per Carles Melgarejo Vila, per a l'assignatura Eines <abbr title="HyperText Markup Language">HTML</abbr> i <abbr title="Cascading Style Sheets">CSS</abbr>. Primer semestre del curs 2022-2023
+				</p>
+
+				<p>
+					<abbr title="Copyright">(c)</abbr> 2022 Tots els drets reservats
+				</p>
+
+				<a href="#">&lt;</a>
+			</div>
+		</footer>
+	</body>
 </html>
