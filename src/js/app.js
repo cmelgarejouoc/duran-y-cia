@@ -7,17 +7,6 @@ console.log(`Hello ${name}`);
 import * as data from './videos.json';
 
 /*
-	Escoltem l'event onclick per veure si s'ha premut el botó close del menú hamburguesa de mobile.
-	Si és així afegim la classe collapse-menu, que ens tanca el menú i l'eliminem després d'un segon per
-	no interferir en el normal funcionament de la dependència externa que gestiona aquest menú hamburguesa.
-*/
-document.addEventListener('click', function (event) {
-	if (!event.target.closest('.close')) return;
-
-	document.querySelector(".hamburger-menu").classList.add("collapse-menu");
-});
-
-/*
 	A la home mirem si està definit el selector my-slider i si és així fem la crida a l'slider
 	amb els seus paràmetres de configuració
 */

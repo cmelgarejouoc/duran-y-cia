@@ -85,12 +85,12 @@
 
 /* HEADER STYLES */
 	body > header{
-		position:            sticky;
-		top:            0;
-		background-color:            #fff;
-		padding:            5.2rem 0 4rem;
-		box-shadow:            0 3px 16px 0px rgba(74, 74, 74, 0.2);
-		z-index:            10;
+		position: sticky;
+		top: 0;
+		background-color: #fff;
+		padding: 5.2rem 0 4rem;
+		box-shadow: 0 3px 16px 0px rgba(74, 74, 74, 0.2);
+		z-index: 10;
 	}
 	body > header > div > a{
 		display: block;
@@ -110,11 +110,6 @@
 	nav.hamburger-menu {
 		color: #5F030E;
 		background-color: rgb(255,255,255);
-	}
-	nav.hamburger-menu aside > img{
-		position: absolute;
-		top: 1.5rem;
-		right: 1.5rem;
 	}
 	nav.hamburger-menu aside > ul{
 		background-image: url("../images/separador-vermell.svg");
@@ -673,7 +668,6 @@
 				overflow-y: initial;
 			}
 			nav.hamburger-menu a.hamburger:not(:hover),
-			nav.hamburger-menu aside > img,
 			nav.hamburger-menu aside > ul:nth-of-type(2){
 				display: none;
 			}
