@@ -12,7 +12,7 @@
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,600;0,800;1,200;1,300;1,400&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap" rel="stylesheet">
 
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hamburger-menu@0.3/dist/hamburger-menu.min.css" >
 
@@ -53,9 +53,29 @@
 			<header>
 				<picture>
 					<source media="(min-width:960px)" srcset="images/d&c-slow-d.jpg">
-					<img src="images/d&c-slow-m.jpg" alt="" title="Duran&Cia al Slow">
+					<img src="images/d&c-slow-m.jpg" alt="Duran&Cia al Slow" title="">
 				</picture>
 			</header>
+
+			<section>
+				<h1>Vídeos destacats</h1>
+
+				<div>
+					<label for="order-select">Ordenar:</label>
+					<select id="order-select">
+						<optgroup label="Per títol">
+							<option value="titleasc">ASC</option>
+							<option value="titledesc">DESC</option>
+						</optgroup>
+						<optgroup label="Per data">
+							<option value="dateasc">ASC</option>
+							<option value="datedesc">DESC</option>
+						</optgroup>
+					</select>
+				</div>
+
+				<ul class="new-videos"></ul>
+			</section>
 		</main>
 
 		<footer>
@@ -77,8 +97,6 @@
 				<p>
 					<abbr title="Copyright">(c)</abbr> 2022 Tots els drets reservats
 				</p>
-
-				<a href="#">&lt;</a>
 			</div>
 		</footer>
 	</body>
