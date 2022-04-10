@@ -106,12 +106,13 @@ function orderVideos(field = 'date', order = 'asc'){
 	un append.
 */
 function renderVideosBy(field = 'date', order = 'asc'){
-	let videos = orderVideos(field,order);
 	let pageVideos = document.querySelector('.new-videos');
 
 	while (pageVideos.hasChildNodes()) {
 		pageVideos.removeChild(pageVideos.firstChild);
 	}
+
+	let videos = orderVideos(field,order);
 
 	let nodes = videos.map(video => {
 		let li = document.createElement('li');
@@ -155,10 +156,8 @@ if(document.querySelector('.new-videos')){
 				fieldValue = 'date';
 				orderValue = 'desc';
 				break;
-			default:
-				fieldValue = 'title';
-				orderValue = 'asc';
 		}
+		
 		renderVideosBy(fieldValue, orderValue);
 	});
 }

@@ -38,7 +38,6 @@
     "rimraf": "^3.0.2"
   },
   "dependencies": {
-    "@parcel/babel-preset-env": "^2.4.1",
     "hamburger-menu": "^0.4.0",
     "tiny-slider": "^2.9.4"
   }
