@@ -471,15 +471,22 @@
 	.detall-treball-page main > section:nth-of-type(1){
 		margin: 0 2.5rem 2.5rem;
 	}
+	.detall-treball-page main > section:nth-of-type(1) h1{
+		font-size: 2rem;
+		color: #5F030E;
+		text-align: left;
+		margin: 0 0 3.3rem 0;
+	}
 	.detall-treball-page main > section:nth-of-type(1) > article{
 		background-color: #ffffff;
 		margin: 0 0 3rem 0;
 		padding: 2rem;
 	}
-	.detall-treball-page main > section:nth-of-type(1) > article h1{
-		font-size: 2rem;
+	.detall-treball-page main > section:nth-of-type(1) > article h2{
+		font-size: 1.8rem;
 		color: #5F030E;
 		margin: 0 0 2.3rem 0;
+		font-weight: 600;
 	}
 	.detall-treball-page main > section:nth-of-type(1) > article p{
 		font-size: 1.6rem;
@@ -961,13 +968,18 @@
 				margin: 0 auto 2.5rem;
 				padding: 0 2rem;
 			}
+			.detall-treball-page main > section:nth-of-type(1) h1{
+				font-size: 2.9rem;
+				text-align: center;
+				margin: 0 0 4.3rem 0;
+			}
 			.detall-treball-page main > section:nth-of-type(1) > article{
 				border-radius: 18px;
 				padding: 4rem 5rem 6rem;
 				margin: 0 0 5rem 0;
 			}
-			.detall-treball-page main > section:nth-of-type(1) > article h1{
-				font-size: 2.9rem;
+			.detall-treball-page main > section:nth-of-type(1) > article h2{
+				font-size: 2.2rem;
 				margin: 0 0 4.3rem 0;
 			}
 			.detall-treball-page main > section:nth-of-type(1) > article > header{
@@ -1137,7 +1149,7 @@
 
 		/* DETALL TREBALL */
 			.detall-treball-page main > nav {
-				padding: 5.5rem 0 2.8rem;
+				padding: 5.5rem 0 3.8rem;
 			}
 			.detall-treball-page main > section:nth-of-type(1){
 				padding: 0;
