@@ -15,9 +15,9 @@ document.addEventListener('click', function (event) {
 	if (!event.target.closest('.close')) return;
 
 	document.querySelector(".hamburger-menu").classList.add("collapse-menu");
-	setTimeout(function(){
+	//setTimeout(function(){
 		document.querySelector(".hamburger-menu").classList.remove("collapse-menu");
-	}, 1000);
+	//}, 1000);
 });
 
 /*
@@ -81,10 +81,10 @@ function orderVideos(field = 'date', order = 'asc'){
 	if (field == 'title') {
 		switch (order) {
 			case 'asc':
-				result = data.sort((a,b)=> a.title > b.title);
+				result = data.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0))
 				break;
 			default:
-				result = data.sort((a,b)=> b.title > a.title);
+				result = data.sort((a,b) => (b.title > a.title) ? 1 : ((a.title > b.title) ? -1 : 0))
 		}
 	}
 
