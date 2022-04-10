@@ -653,8 +653,8 @@
 		border-bottom: 1px dotted #000000;
 	}
 
-/* MEDIA QUERIES TABLETS */
-	@media screen and (min-width: 960px){
+/* MEDIA QUERIES FABLETS & TABLETS OR MOBILE LANDSCAPE*/
+	@media screen and (min-width: 667px){
 		html {
 			font-size: 0.8vw;
 		}
