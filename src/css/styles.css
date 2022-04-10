@@ -278,6 +278,7 @@
 		height: 23rem;
 		display: block;
 		margin: 0 0 1rem 0;
+		border: 0;
 	}
 	.home-page main > div:nth-of-type(1) > a{
 		font-weight: 600;
@@ -396,6 +397,7 @@
 	.presentacio-page main > section:nth-of-type(2) > iframe{
 		width: 81.8vw;
 		height: 49.3vw;
+		border: 0;
 	}
 
 /* LLISTAT TREBALLS STYLES */
@@ -506,6 +508,7 @@
 		margin: 0 0 2.2rem 0;
 		width: 80vw;
 		height: 47vw;
+		border: 0;
 	}
 	.detall-treball-page main > section:nth-of-type(1) > article > p:last-child{
 		margin: 0 0 1.5rem 0;
@@ -608,6 +611,7 @@
 	.videos-page main section > ul li iframe{
 		width: 81.8vw;
 		height: 49.3vw;
+		border: 0;
 	}
 	.videos-page main section > ul li p{
 		padding: 0.7rem 1rem;
