@@ -716,7 +716,7 @@
 				margin-bottom: 0;
 			}
 			nav.hamburger-menu aside{
-				width: 41rem;
+				width: 43rem;
 				margin: 0 auto;
 				text-align: center;
 			}
@@ -724,9 +724,10 @@
 				display: inline-block;
 				margin: 0 1.6rem;
 			}
-			nav.hamburger-menu aside ul li a, nav.hamburger-menu aside ul li span{
+			nav.hamburger-menu aside ul li a, 
+			nav.hamburger-menu aside ul li span{
 				text-transform: uppercase;
-				font-size: 1.8rem;
+				font-size: 2rem;
 			}
 			nav.hamburger-menu aside ul li.current > span, 
 			nav.hamburger-menu aside ul li.current > a, 
@@ -938,7 +939,6 @@
 				border-top-right-radius: 18px;
 				border-bottom-right-radius: 18px;
 				border-bottom-left-radius: 0;
-				height: 35rem;
 				margin: 0;
 			}
 			.llistat-treballs-page main > section:nth-of-type(1) > div:nth-of-type(2n) h2{
@@ -1133,6 +1133,13 @@
 		html {
 			font-size: 10px;
 		}
+
+		/* HEADER  */
+			nav.hamburger-menu aside ul li a, 
+			nav.hamburger-menu aside ul li span{
+				text-transform: uppercase;
+				font-size: 1.8rem;
+			}
 
 		/* HOME */
 			.home-page main > section:nth-of-type(1){
