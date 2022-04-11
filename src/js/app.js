@@ -2,6 +2,11 @@ const name = 'world';
 console.log(`Hello ${name}`);
 
 /*
+	Importem la llibreria per manipular dates
+*/
+import date from 'date-and-time';
+
+/*
 	Importem un arxiu json amb el llistat de vídeos amb títol, id de Youtube i data d'enregistrament
 */
 import * as data from './videos.json';
@@ -101,10 +106,13 @@ function renderVideosBy(field = 'date', order = 'asc'){
 	let videos = orderVideos(field,order);
 
 	let nodes = videos.map(video => {
+		const videoDate = new Date(video.date);
+		const formattedDate = date.format(videoDate, 'DD/MM/YYYY'); 
+
 		let li = document.createElement('li');
 		li.innerHTML= `
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/` + video.yt_id + `" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		<p>` + video.title + ` <time datetime="` + video.date + `">` + video.date + `</time></p>`;
+		<p>` + video.title + ` <time datetime="` + video.date + `">` + formattedDate + `</time></p>`;
 		return li;
 	});
 
