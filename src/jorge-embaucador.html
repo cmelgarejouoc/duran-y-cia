@@ -14,10 +14,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap" rel="stylesheet">
 
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hamburger-menu@0.3/dist/hamburger-menu.min.css" >
-
 		<script src=https://cdn.jsdelivr.net/npm/jquery@3.6/dist/jquery.min.js></script>
-		<script src=https://cdn.jsdelivr.net/npm/hamburger-menu@0.3/dist/hamburger-menu.min.js></script>
 
 		<link rel="stylesheet" href="css/styles.css" />
 		<script type="module" src="js/app.js"></script>
@@ -27,7 +24,20 @@
 		<header id="top">
 			<div>
 				<a href="index.html">
-					<img src="images/logo-duran-cia.svg" alt="Logotipo">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="80" width="210">
+						<defs>
+							<style>
+								@import "https://fonts.googleapis.com/css2?family=Gravitas+One&amp;display=swap";
+							</style>
+						</defs>
+
+						<line x1="0" x2="100%" y1="1" y2="1" stroke="#5F030E" stroke-width="1"/>
+						<line x1="0" x2="100%" y1="99%" y2="99%" stroke="#5F030E" stroke-width="1"/>
+
+						<text font-family="Gravitas One" text-anchor="middle" stroke="#5F030E" stroke-width="1" fill="#5F030E" font-size="80" y="70" x="105">d&amp;c</text>
+					</svg>
+
+					<p>Web oficial del grup Duran&Cia</p>
 				</a>
 
 				<nav class=hamburger-menu>
@@ -49,9 +59,14 @@
 
 		<main>
 			<header>
+				<!-- Responsive images: Art direction -->
 				<picture>
-					<source media="(min-width:960px)" srcset="images/d&c-pl-reial-d.jpg">
-					<img src="images/d&c-pl-reial-m.jpg" alt="Duran&Cia a la Plaça Reial. Sessió videoclip." title="">
+					<source media="(max-width:480px)" srcset="images/d&c-pl-reial-m_480w.jpg?as=webp" type="image/webp">
+					<source media="(max-width:667px)" srcset="images/d&c-pl-reial-m_667w.jpg?as=webp" type="image/webp">
+					<source media="(min-width: 1920px)" srcset="images/d&c-pl-reial-d_1920w.jpg?as=webp" type="image/webp">
+					<source media="(min-width: 1440px)" srcset="images/d&c-pl-reial-d_1440w.jpg?as=webp" type="image/webp">
+					<source media="(min-width: 668px)" srcset="images/d&c-pl-reial-d_1030w.jpg?as=webp" type="image/webp">
+					<img src="images/d&c-pl-reial-d_1920w.jpg?as=webp" alt="Duran&Cia a la Plaça Reial. Sessió videoclip." title="" type="image/webp">
 				</picture>
 			</header>
 
@@ -72,22 +87,41 @@
 						Jocs d'harmonies de veus sobre una base funk-rock contundent
 					</h2>
 
-					<header>
-						<picture>
-							<source media="(min-width:960px)" srcset="images/video-jorge-embaucador.jpg">
-							<img src="images/video-jorge-embaucador-miniatura.jpg" alt="Vídeo Jorge Embaucador." title="">
-						</picture>
+					<!-- Responsive images: Art direction -->
+					<picture>
+						<source media="(max-width:666px)" srcset="images/destacada_jorge_embaucador_480w.jpg?as=webp" type="image/webp">
+						<source media="(max-width:1023px)" srcset="images/destacada_jorge_embaucador_667w.jpg?as=webp" type="image/webp">
 
-						<div>
-							<p>
-								2012. Autoproducció.
-							</p>
-						</div>
-					</header>
+						<source media="(min-width: 1087px)" srcset="images/destacada_jorge_embaucador_1087w.jpg?as=webp" type="image/webp">
+						<source media="(min-width: 1024px)" srcset="images/destacada_jorge_embaucador_1024w.jpg?as=webp" type="image/webp">
+						<img src="images/destacada_jorge_embaucador_1087w.jpg?as=webp" alt="Gravació videoclip" title="" type="image/webp">
+					</picture>
+
+					<!-- Resolution switching: Different resolutions -->
+					<img srcset="images/sidecar-logo1_180w.gif,
+								 images/sidecar-logo1_270w.gif 1.5x,
+								 images/sidecar-logo1_360w.gif 2x"
+						 src="images/sidecar-logo1_180w.gif" 
+						 alt="Extracte foto Carles al Bikini.">
+
+					<div>
+						<p>
+							2012. Autoproducció.
+						</p>
+					</div>
 
 					<p>
 						El 2012, fruit de l'enregistrament de l'<abbr title="Extended Play">EP</abbr> "Con esa pesada costumbre de siempre sonreír" decideixen enregistrar un videoclip promocional d'un dels temes que consideren com a single, "Jorge Embaucador". El vídeo es va enregistrar a la sala Sidecar (amb tomes també a la plaça Reial de Barcelona) i a la sala Rocksound.
 					</p>
+
+					<!-- Responsive images: Different sizes -->
+					<img srcset="images/embaucador_acustic_480w.jpg?as=webp 480w, 
+								 images/embaucador_acustic_906w.jpg?as=webp 906w" 
+						 sizes="(max-width: 768px) 480px, 
+						 		 906px"
+						 src="images/embaucador_acustic_906w.jpg?as=webp"
+						 alt="Bolo al Sidecar." 
+						 type="image/webp"/>
 
 					<p>
 						El tema, tot i que en format acústic, deixa entreveure algunes de les característiques de la banda amb jocs d'harmonies de veus sobre una base funk-rock contundent i amb una lletra irònica característica del front-man, Carlos Durán.
@@ -134,11 +168,23 @@
 
 				<div>
 					<a href="material-de-derribo.html">
-						<img src="images/material-de-derribo.jpg" alt="CD Material de derribo." title="">
+						<!-- Resolution switching: Different resolutions -->
+						<img srcset="images/material-de-derribo_291w.jpg?as=webp,
+									 images/material-de-derribo_436w.jpg?as=webp 1.5x,
+									 images/material-de-derribo_582w.jpg?as=webp 2x"
+							 src="images/material-de-derribo_291w.jpg?as=webp" 
+							 alt="CD Material de derribo." 
+							 type="image/webp">
 					</a>
 
 					<a href="con-esa-pesada-costumbre-de-siempre-sonreir.html">
-						<img src="images/con-esa-pesada-costumbre-de-siempre-sonreir.jpg" alt="CD Con esa pesada costumbre de siempre sonreír." title="">
+						<!-- Resolution switching: Different resolutions -->
+						<img srcset="images/con-esa-pesada-costumbre-de-siempre-sonreir_291w.jpg?as=webp,
+									 images/con-esa-pesada-costumbre-de-siempre-sonreir_436w.jpg?as=webp 1.5x,
+									 images/con-esa-pesada-costumbre-de-siempre-sonreir_582w.jpg?as=webp 2x"
+							 src="images/con-esa-pesada-costumbre-de-siempre-sonreir_291w.jpg?as=webp" 
+							 alt="CD Con esa pesada costumbre de siempre sonreír" 
+							 type="image/webp">
 					</a>
 				</div>
 			</section>
@@ -146,8 +192,25 @@
 
 		<footer>
 			<div>
+				<a href="index.html">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="45" width="140">
+						<defs>
+							<style>
+								@import "https://fonts.googleapis.com/css2?family=Gravitas+One&amp;display=swap";
+							</style>
+						</defs>
+
+						<line x1="0" x2="100%" y1="0" y2="0" stroke="#ffffff" stroke-width="1"/>
+						<line x1="0" x2="100%" y1="100%" y2="100%" stroke="#ffffff" stroke-width="1"/>
+
+						<text font-family="Gravitas One" text-anchor="middle" stroke="#ffffff" stroke-width="1" fill="#ffffff" font-size="50" y="40" x="71">d&amp;c</text>
+					</svg>
+				</a>
+
 				<ul>
 					<li><a href="presentacio.html">Presentació</a></li>
+					<li><a href="llistat-treballs.html">Treballs</a></li>
+					<li><a href="videos.html">Vídeos</a></li>
 					<li><a href="enllacos.html">Enllaços</a></li>
 				</ul>
 

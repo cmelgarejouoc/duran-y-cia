@@ -14,10 +14,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap" rel="stylesheet">
 
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hamburger-menu@0.3/dist/hamburger-menu.min.css" >
-
 		<script src=https://cdn.jsdelivr.net/npm/jquery@3.6/dist/jquery.min.js></script>
-		<script src=https://cdn.jsdelivr.net/npm/hamburger-menu@0.3/dist/hamburger-menu.min.js></script>
 
 		<link rel="stylesheet" href="css/styles.css" />
 		<script type="module" src="js/app.js"></script>
@@ -27,7 +24,20 @@
 		<header id="top">
 			<div>
 				<a href="index.html">
-					<img src="images/logo-duran-cia.svg" alt="Logotipo">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="80" width="210">
+						<defs>
+							<style>
+								@import "https://fonts.googleapis.com/css2?family=Gravitas+One&amp;display=swap";
+							</style>
+						</defs>
+
+						<line x1="0" x2="100%" y1="1" y2="1" stroke="#5F030E" stroke-width="1"/>
+						<line x1="0" x2="100%" y1="99%" y2="99%" stroke="#5F030E" stroke-width="1"/>
+
+						<text font-family="Gravitas One" text-anchor="middle" stroke="#5F030E" stroke-width="1" fill="#5F030E" font-size="80" y="70" x="105">d&amp;c</text>
+					</svg>
+
+					<p>Web oficial del grup Duran&Cia</p>
 				</a>
 
 				<nav class=hamburger-menu>
@@ -49,9 +59,14 @@
 
 		<main>
 			<header>
+				<!-- Responsive images: Art direction -->
 				<picture>
-					<source media="(min-width:960px)" srcset="images/d&c-gravacio-ep-d.jpg">
-					<img src="images/d&c-gravacio-ep-m.jpg" alt="Sessió de gravació EP" title="">
+					<source media="(max-width:480px)" srcset="images/dc-parc-m_480w.jpg?as=webp" type="image/webp">
+					<source media="(max-width:667px)" srcset="images/dc-parc-m_667w.jpg?as=webp" type="image/webp">
+					<source media="(min-width: 1920px)" srcset="images/dc-parc-d_1920w.jpg?as=webp" type="image/webp">
+					<source media="(min-width: 1440px)" srcset="images/dc-parc-d_1440w.jpg?as=webp" type="image/webp">
+					<source media="(min-width: 668px)" srcset="images/dc-parc-d_1030w.jpg?as=webp" type="image/webp">
+					<img src="images/dc-parc-d_1920w.jpg?as=webp" alt="Sessió de fotos per la portada de l'EP" title="" type="image/webp">
 				</picture>
 			</header>
 
@@ -72,8 +87,24 @@
 						Un so diferent, però sense perdre la seva personalitat i força
 					</h2>
 
+					<!-- Responsive images: Art direction -->
+					<picture>
+						<source media="(max-width:666px)" srcset="images/destacada_con_esa_pesada_costumbre_480w.jpg?as=webp" type="image/webp">
+						<source media="(max-width:1023px)" srcset="images/destacada_con_esa_pesada_costumbre_667w.jpg?as=webp" type="image/webp">
+
+						<source media="(min-width: 1087px)" srcset="images/destacada_con_esa_pesada_costumbre_1087w.jpg?as=webp" type="image/webp">
+						<source media="(min-width: 1024px)" srcset="images/destacada_con_esa_pesada_costumbre_1024w.jpg?as=webp" type="image/webp">
+						<img src="images/destacada_con_esa_pesada_costumbre_1087w.jpg?as=webp" alt="Gravació de l'EP" title="" type="image/webp">
+					</picture>
+
 					<header>
-						<img src="images/con-esa-pesada-costumbre-de-siempre-sonreir.jpg" alt="CD Con esa pesada costumbre de siempre sonreír." title="">
+						<!-- Resolution switching: Different resolutions -->
+						<img srcset="images/con-esa-pesada-costumbre-de-siempre-sonreir_291w.jpg?as=webp,
+									 images/con-esa-pesada-costumbre-de-siempre-sonreir_436w.jpg?as=webp 1.5x,
+									 images/con-esa-pesada-costumbre-de-siempre-sonreir_582w.jpg?as=webp 2x"
+							 src="images/con-esa-pesada-costumbre-de-siempre-sonreir_291w.jpg?as=webp" 
+							 alt="CD Con esa pesada costumbre de siempre sonreír" 
+							 type="image/webp">
 
 						<div>
 							<p>
@@ -101,6 +132,8 @@
 									Avall
 								</li>
 							</ul>
+
+							<img src="images/logo_the_box.svg" alt="The Box. Estudi de gravació de Barcelona." title="">
 						</div>
 					</header>
 
@@ -108,11 +141,29 @@
 						Aquest disc es va concebre com un mini <abbr title="Long Play">LP</abbr>, un <abbr title="Extended Play">EP</abbr> amb 5 peces enregistrades als estudis The Box de Barcelona el 2012, 4 d'elles en castellà i una en català. Com a <i lang="en">singles</i> destaquen “En el país de los gigantes” i “Jorge Embaucador”. Aquesta última és que la que es va triar per enregistrar-ne un <a href="jorge-embaucador.html">vídeo promocional</a>.
 					</p>
 
+					<!-- Responsive images: Different sizes -->
+					<img srcset="images/dc-parc-2_480w.jpg?as=webp 480w, 
+								 images/dc-parc-2_1024w.jpg?as=webp 1024w" 
+						 sizes="(max-width: 768px) 480px, 
+						 		 1024px"
+						 src="images/dc-parc-2_1024w.jpg?as=webp"
+						 alt="Sessió de fotos per la portada del disc de Duran&Cia." 
+						 type="image/webp"/>
+
 					<p>
 						Com a conseqüència del treball d'adaptació del seu repertori per a una sèrie de concerts acústics en petit format, va sorgir la idea de gravar una sèrie de noves cançons, només amb instruments acústics, algunes de les quals van donar lloc a aquest treball. En l'enregistrament hi van col·laborar membres del grup Outsider, banda d'<i lang="en">indie-pop</i> de Barcelona liderada per Daniel Dodds i Larry Magrinyà.
 					</p>
 
 					<iframe width="907" height="166" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/63603582&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+
+					<!-- Responsive images: Different sizes -->
+					<img srcset="images/dc-parc-3_480w.jpg?as=webp 480w, 
+								 images/dc-parc-3_906w.jpg?as=webp 906w" 
+						 sizes="(max-width: 768px) 480px, 
+						 		 906px"
+						 src="images/dc-parc-3_906w.jpg?as=webp"
+						 alt="Sessió de fotos per la portada del disc de Duran&Cia." 
+						 type="image/webp"/>
 
 					<p>
 						Després de “Material de derribo”, el seu anterior disc, elèctric i contundent, Duran&Cia presenta en aquest treball un so diferent, però sense perdre la seva personalitat i força.
@@ -153,11 +204,23 @@
 
 				<div>
 					<a href="material-de-derribo.html">
-						<img src="images/material-de-derribo.jpg" alt="CD Material de derribo." title="">
+						<!-- Resolution switching: Different resolutions -->
+						<img srcset="images/material-de-derribo_291w.jpg?as=webp,
+									 images/material-de-derribo_436w.jpg?as=webp 1.5x,
+									 images/material-de-derribo_582w.jpg?as=webp 2x"
+							 src="images/material-de-derribo_291w.jpg?as=webp" 
+							 alt="CD Material de derribo." 
+							 type="image/webp">
 					</a>
 
 					<a href="jorge-embaucador.html">
-						<img src="images/video-jorge-embaucador-miniatura.jpg" alt="Vídeo Jorge Embaucador." title="">
+						<!-- Resolution switching: Different resolutions -->
+						<img srcset="images/video-jorge-embaucador-miniatura_291w.jpg?as=webp,
+									 images/video-jorge-embaucador-miniatura_436w.jpg?as=webp 1.5x,
+									 images/video-jorge-embaucador-miniatura_582w.jpg?as=webp 2x"
+							 src="images/video-jorge-embaucador-miniatura_291w.jpg?as=webp" 
+							 alt="Vídeo Jorge Embaucador." 
+							 type="image/webp">
 					</a>
 				</div>
 			</section>
@@ -165,8 +228,25 @@
 
 		<footer>
 			<div>
+				<a href="index.html">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="45" width="140">
+						<defs>
+							<style>
+								@import "https://fonts.googleapis.com/css2?family=Gravitas+One&amp;display=swap";
+							</style>
+						</defs>
+
+						<line x1="0" x2="100%" y1="0" y2="0" stroke="#ffffff" stroke-width="1"/>
+						<line x1="0" x2="100%" y1="100%" y2="100%" stroke="#ffffff" stroke-width="1"/>
+
+						<text font-family="Gravitas One" text-anchor="middle" stroke="#ffffff" stroke-width="1" fill="#ffffff" font-size="50" y="40" x="71">d&amp;c</text>
+					</svg>
+				</a>
+
 				<ul>
 					<li><a href="presentacio.html">Presentació</a></li>
+					<li><a href="llistat-treballs.html">Treballs</a></li>
+					<li><a href="videos.html">Vídeos</a></li>
 					<li><a href="enllacos.html">Enllaços</a></li>
 				</ul>
 

@@ -2,6 +2,16 @@ const name = 'world';
 console.log(`Hello ${name}`);
 
 /*
+	Importem la llibreria pel menú hamburguesa
+*/
+import 'hamburger-menu';
+
+/*
+	Importem la llibreria per l'slider
+*/
+import {tns} from 'tiny-slider';
+
+/*
 	Importem la llibreria per manipular dates
 */
 import date from 'date-and-time';
@@ -155,3 +165,14 @@ if(document.querySelector('.new-videos')){
 		renderVideosBy(fieldValue, orderValue);
 	});
 }
+
+
+let header = document.querySelector('header');
+
+window.addEventListener('scroll', function() {
+	if(document.documentElement.scrollTop + window.innerHeight > document.body.clientHeight - 100) {
+		header.classList.add("hidden");
+	}else{
+		header.classList.remove("hidden");
+	}
+});

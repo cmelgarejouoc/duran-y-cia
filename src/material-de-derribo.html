@@ -14,10 +14,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap" rel="stylesheet">
 
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hamburger-menu@0.3/dist/hamburger-menu.min.css" >
-
 		<script src=https://cdn.jsdelivr.net/npm/jquery@3.6/dist/jquery.min.js></script>
-		<script src=https://cdn.jsdelivr.net/npm/hamburger-menu@0.3/dist/hamburger-menu.min.js></script>
 
 		<link rel="stylesheet" href="css/styles.css" />
 		<script type="module" src="js/app.js"></script>
@@ -27,7 +24,20 @@
 		<header id="top">
 			<div>
 				<a href="index.html">
-					<img src="images/logo-duran-cia.svg" alt="Logotipo">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="80" width="210">
+						<defs>
+							<style>
+								@import "https://fonts.googleapis.com/css2?family=Gravitas+One&amp;display=swap";
+							</style>
+						</defs>
+
+						<line x1="0" x2="100%" y1="1" y2="1" stroke="#5F030E" stroke-width="1"/>
+						<line x1="0" x2="100%" y1="99%" y2="99%" stroke="#5F030E" stroke-width="1"/>
+
+						<text font-family="Gravitas One" text-anchor="middle" stroke="#5F030E" stroke-width="1" fill="#5F030E" font-size="80" y="70" x="105">d&amp;c</text>
+					</svg>
+
+					<p>Web oficial del grup Duran&Cia</p>
 				</a>
 
 				<nav class=hamburger-menu>
@@ -49,9 +59,14 @@
 
 		<main>
 			<header>
+				<!-- Responsive images: Art direction -->
 				<picture>
-					<source media="(min-width:960px)" srcset="images/d&c-sidecar-moment-2-d.jpg">
-					<img src="images/d&c-sidecar-moment-2-m.jpg" alt="Duran&Cia al Sidecar" title="">
+					<source media="(max-width:480px)" srcset="images/d&c-sidecar-moment-2-m_480w.jpg?as=webp" type="image/webp">
+					<source media="(max-width:667px)" srcset="images/d&c-sidecar-moment-2-m_667w.jpg?as=webp" type="image/webp">
+					<source media="(min-width: 1920px)" srcset="images/d&c-sidecar-moment-2-d_1920w.jpg?as=webp" type="image/webp">
+					<source media="(min-width: 1440px)" srcset="images/d&c-sidecar-moment-2-d_1440w.jpg?as=webp" type="image/webp">
+					<source media="(min-width: 668px)" srcset="images/d&c-sidecar-moment-2-d_1030w.jpg?as=webp" type="image/webp">
+					<img src="images/d&c-sidecar-moment-2-d_1920w.jpg?as=webp" alt="Duran&Cia al Sidecar" title="" type="image/webp">
 				</picture>
 			</header>
 
@@ -72,57 +87,70 @@
 						Del pop al rock o al funk-rock, amb pinsellades de rock progressiu
 					</h2>
 
-					<header>
-						<img src="images/material-de-derribo.jpg" alt="CD Material de derribo." title="">
+					<!-- Responsive images: Art direction -->
+					<picture>
+						<source media="(max-width:666px)" srcset="images/destacada_material_derribo_480w.jpg?as=webp" type="image/webp">
+						<source media="(max-width:1023px)" srcset="images/destacada_material_derribo_667w.jpg?as=webp" type="image/webp">
 
-						<div>
-							<p>
-								2009. Autoproducció.
-							</p>
+						<source media="(min-width: 1087px)" srcset="images/destacada_material_derribo_1087w.jpg?as=webp" type="image/webp">
+						<source media="(min-width: 1024px)" srcset="images/destacada_material_derribo_1024w.jpg?as=webp" type="image/webp">
+						<img src="images/destacada_material_derribo_1087w.jpg?as=webp" alt="Material gràfic presentació Bikini" title="" type="image/webp">
+					</picture>
 
-							<ul>
-								<li>
-									El viejo pescador
-								</li>
+					<div>
+						<!-- Resolution switching: Different resolutions -->
+						<img srcset="images/foto_carles_147w.png,
+									 images/foto_carles_220w.png 1.5x,
+									 images/foto_carles_294w.png 2x"
+							 src="images/foto_carles_147w.png" 
+							 alt="Extracte foto Carles al Bikini.">
 
-								<li>
-									Nadie lo sabe
-								</li>
+						<p>
+							2009. Autoproducció.
+						</p>
 
-								<li>
-									Prohibida
-								</li>
+						<ul>
+							<li>
+								El viejo pescador
+							</li>
 
-								<li>
-									Material de derribo
-								</li>
+							<li>
+								Nadie lo sabe
+							</li>
 
-								<li>
-									Junto al fuego
-								</li>
+							<li>
+								Prohibida
+							</li>
 
-								<li>
-									El reino de Sadik
-								</li>
+							<li>
+								Material de derribo
+							</li>
 
-								<li>
-									Pasando por el aro
-								</li>
+							<li>
+								Junto al fuego
+							</li>
 
-								<li>
-									Sabor añejo
-								</li>
+							<li>
+								El reino de Sadik
+							</li>
 
-								<li>
-									Hablar por hablar
-								</li>
+							<li>
+								Pasando por el aro
+							</li>
 
-								<li>
-									Brillante
-								</li>
-							</ul>
-						</div>
-					</header>
+							<li>
+								Sabor añejo
+							</li>
+
+							<li>
+								Hablar por hablar
+							</li>
+
+							<li>
+								Brillante
+							</li>
+						</ul>
+					</div>
 
 					<p>
 						"Material de derribo" és el primer treball discogràfic de la banda formada al 2004 i va ser publicat al 2009. És una autoproducció total, amb enregistrament en els seus home studios, mescla i masterització pròpies i autoedició d'una tirada curta dexemplars en format <abbr title="Compact Disc">CD</abbr>, apostant també per l'edició digital a Spotify, iTunes i Amazon Music.
@@ -132,6 +160,15 @@
 						L'àlbum consta de 10 temes de composició pròpia.
 					</p>
 
+					<!-- Responsive images: Different sizes -->
+					<img srcset="images/presentacio_bikini_480w.jpg?as=webp 480w, 
+								 images/presentacio_bikini_906w.jpg?as=webp 906w" 
+						 sizes="(max-width: 768px) 480px, 
+						 		 906px"
+						 src="images/presentacio_bikini_906w.jpg?as=webp"
+						 alt="Presentació de 'Material de derribo' a la sala Bikini." 
+						 type="image/webp"/>
+
 					<p>
 						Malgrat lo artesanal de la producció, el so de l'àlbum és fresc i contundent fruit dels anys d'experiència dels membres del grup tant als escenaris com als estudis de gravació.
 					</p>
@@ -139,6 +176,16 @@
 					<p>
 						L'estil va del pop al rock o al funk-rock, amb pinsellades de rock progressiu o del rock dels 80. Una amalgama d'estils que emulsionen en un rock bàsicament energètic. La presentació del disc es va fer a l'emblemàtica sala Bikini de Barcelona el 6 de novembre de 2009.
 					</p>
+
+					<!-- Resolution switching: Different resolutions -->
+					<img srcset="images/material-de-derribo_291w.jpg?as=webp,
+								 images/material-de-derribo_436w.jpg?as=webp 1.5x,
+								 images/material-de-derribo_582w.jpg?as=webp 2x"
+						 src="images/material-de-derribo_291w.jpg?as=webp" 
+						 alt="CD Material de derribo" 
+						 type="image/webp">
+
+					<img class="logo-duran-animat" src="images/logo_antic_animat.gif" alt="Versió del logo de Duran&Cia." title="">
 
 					<p>
 						Disponible a:
@@ -171,11 +218,23 @@
 
 				<div>
 					<a href="con-esa-pesada-costumbre-de-siempre-sonreir.html">
-						<img src="images/con-esa-pesada-costumbre-de-siempre-sonreir.jpg" alt="CD Con esa pesada costumbre de siempre sonreír." title="">
+						<!-- Resolution switching: Different resolutions -->
+						<img srcset="images/con-esa-pesada-costumbre-de-siempre-sonreir_291w.jpg?as=webp,
+									 images/con-esa-pesada-costumbre-de-siempre-sonreir_436w.jpg?as=webp 1.5x,
+									 images/con-esa-pesada-costumbre-de-siempre-sonreir_582w.jpg?as=webp 2x"
+							 src="images/con-esa-pesada-costumbre-de-siempre-sonreir_291w.jpg?as=webp" 
+							 alt="CD Con esa pesada costumbre de siempre sonreír" 
+							 type="image/webp">
 					</a>
 
 					<a href="jorge-embaucador.html">
-						<img src="images/video-jorge-embaucador-miniatura.jpg" alt="Vídeo Jorge Embaucador." title="">
+						<!-- Resolution switching: Different resolutions -->
+						<img srcset="images/video-jorge-embaucador-miniatura_291w.jpg?as=webp,
+									 images/video-jorge-embaucador-miniatura_436w.jpg?as=webp 1.5x,
+									 images/video-jorge-embaucador-miniatura_582w.jpg?as=webp 2x"
+							 src="images/video-jorge-embaucador-miniatura_291w.jpg?as=webp" 
+							 alt="Vídeo Jorge Embaucador." 
+							 type="image/webp">
 					</a>
 				</div>
 			</section>
@@ -183,8 +242,25 @@
 
 		<footer>
 			<div>
+				<a href="index.html">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="45" width="140">
+						<defs>
+							<style>
+								@import "https://fonts.googleapis.com/css2?family=Gravitas+One&amp;display=swap";
+							</style>
+						</defs>
+
+						<line x1="0" x2="100%" y1="0" y2="0" stroke="#ffffff" stroke-width="1"/>
+						<line x1="0" x2="100%" y1="100%" y2="100%" stroke="#ffffff" stroke-width="1"/>
+
+						<text font-family="Gravitas One" text-anchor="middle" stroke="#ffffff" stroke-width="1" fill="#ffffff" font-size="50" y="40" x="71">d&amp;c</text>
+					</svg>
+				</a>
+
 				<ul>
 					<li><a href="presentacio.html">Presentació</a></li>
+					<li><a href="llistat-treballs.html">Treballs</a></li>
+					<li><a href="videos.html">Vídeos</a></li>
 					<li><a href="enllacos.html">Enllaços</a></li>
 				</ul>
 

@@ -3,6 +3,9 @@
 	Estils CSS amb estratègia 'Mobile first'
 */
 
+@import "../../node_modules/tiny-slider/dist/tiny-slider.css";
+@import "../../node_modules/hamburger-menu/dist/hamburger-menu.min.css";
+
 /* HAMBURGUER MENU PACKAGE */
 	html body {
 		padding: 35px 10px 0px 10px;
@@ -77,6 +80,9 @@
 	picture img{
 		display: block;
 	}
+	picture img{
+		width: 100%;
+	}
 
 	h1 i,
 	h2 i{
@@ -91,11 +97,51 @@
 		padding: 5.2rem 0 4rem;
 		box-shadow: 0 3px 16px 0px rgba(74, 74, 74, 0.2);
 		z-index: 10;
+
+		visibility: visible;
+		opacity: 1;
+		transition: opacity 0.5s linear;
+	}
+	body > header.hidden {
+		visibility: hidden;
+		opacity: 0;
+		transition: visibility 0s 0.5s, opacity 0.5s linear;
 	}
 	body > header > div > a{
 		display: block;
 		width: max-content;
 		margin: 0 auto 0 auto;
+		text-align: center;
+		text-decoration: none;
+	}
+	body > header > div > a svg line:nth-of-type(1){
+		animation: linia1 1s linear normal;
+	}
+	body > header > div > a svg line:nth-of-type(2){
+		animation: linia2 1s linear normal;
+	}
+
+	@keyframes linia1 {
+		from {
+			transform: translate(0,50%);
+		}
+		to {
+			transform: translate(0,0);
+		}
+	}
+
+	@keyframes linia2 {
+		from {
+			transform: translate(0,-50%);
+		}
+		to {
+			transform: translate(0,0);
+		}
+	}
+
+	body > header > div > a > p{
+		font-size: 1.5rem;
+		color: #5F030E;
 	}
 	body > header > div > a img{
 		width: 27.1rem;
@@ -157,8 +203,26 @@
 		font-weight: 600;
 		padding: 2.6rem 4rem 1.4rem;
 	}
+	footer > div > a{
+		display: block;
+		width: max-content;
+	}
+	footer > div > a:hover > svg text{
+		/*
+		fill: rgb(189, 55, 0);
+		stroke: rgb(189, 55, 0);
+		*/
+		opacity: 0.7;
+	}
+	footer > div > a:hover > svg line{
+		/*
+		stroke: rgb(255, 255, 255);
+		*/
+		opacity: 0.7;
+	}
 	footer > div > ul{
 		list-style: none;
+		margin: 3rem auto 0 auto;
 	}
 	footer > div > ul:nth-of-type(1) li a{
 		color: #fff;
@@ -208,27 +272,30 @@
 /* MAIN STYLES */
 	main{
 	}
+	body main header{
+		max-width: 2145px;
+	}
 
 /* HOME STYLES */
 
 	/* CUSTOM TINY-SLIDER STYLES */
-	.home-page main header .tns-nav {
-		text-align: center;
-		padding: 10px 0;
-		background-color: #f1e9e9;
-	}
-	.home-page main header .tns-nav > [aria-controls] {
-		width: 9px;
-		height: 9px;
-		padding: 0;
-		margin: 0 5px;
-		border-radius: 50%;
-		background: #ccc8c8;
-		border: 0;
-	}
-	.home-page main header .tns-nav > .tns-nav-active { 
-		background: #5F030E; 
-	}
+		.home-page main header .tns-nav {
+			text-align: center;
+			padding: 10px 0;
+			background-color: #f1e9e9;
+		}
+		.home-page main header .tns-nav > [aria-controls] {
+			width: 9px;
+			height: 9px;
+			padding: 0;
+			margin: 0 5px;
+			border-radius: 50%;
+			background: #ccc8c8;
+			border: 0;
+		}
+		.home-page main header .tns-nav > .tns-nav-active { 
+			background: #5F030E; 
+		}
 	/* END CUSTOM TINY-SLIDER STYLES */
 
 	.home-page main{
@@ -268,6 +335,8 @@
 	.home-page main > section:nth-of-type(1) > a:hover{
 		color: rgba(0,0,0,0.5); 
 		border-bottom: 1px dotted rgba(0,0,0,0.5);
+		transform: scale(1.1);
+		transition: all ease 500ms;
 	}
 	.home-page main > div:nth-of-type(1){
 		background-color: #F1E9E9;
@@ -348,6 +417,14 @@
 		color: rgba(0,0,0,0.5); 
 		border-bottom: 1px dotted rgba(0,0,0,0.5);
 	}
+	.home-page main > section:nth-of-type(2) article > img{
+		animation: circle 8s infinite;
+	}
+	@keyframes circle {
+		0% { clip-path: polygon(50% 0%, 78% 0, 100% 0, 100% 56%, 100% 100%, 50% 100%, 0 100%, 0 54%, 0 0, 26% 0); }
+		50% { clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+		100% { clip-path: polygon(50% 0%, 78% 0, 100% 0, 100% 56%, 100% 100%, 50% 100%, 0 100%, 0 54%, 0 0, 26% 0); }
+	}
 
 /* PRESENTACIÓ STYLES */
 	.presentacio-page main{
@@ -396,6 +473,35 @@
 		height: 49.3vw;
 		border: 0;
 	}
+	.presentacio-page main > section:nth-of-type(2) > svg{
+		margin: 0 0 0 0;
+		max-width: 400px;
+		width: 34rem;
+	}
+	.presentacio-page main > section:nth-of-type(2) > svg line:nth-of-type(1){
+		animation: linia1 5s linear infinite;
+	}
+	.presentacio-page main > section:nth-of-type(2) > svg line:nth-of-type(2){
+		animation: linia2 5s linear infinite;
+	}
+
+	@keyframes linia1 {
+		from {
+			transform: translate(0,100%);
+		}
+		to {
+			transform: translate(0,0);
+		}
+	}
+
+	@keyframes linia2 {
+		from {
+			transform: translate(0,-100%);
+		}
+		to {
+			transform: translate(0,0);
+		}
+	}
 
 /* LLISTAT TREBALLS STYLES */
 	.llistat-treballs-page main{
@@ -405,6 +511,9 @@
 	.llistat-treballs-page main > section:nth-of-type(1){
 		background-color: #F1E9E9;
 		padding: 0 4rem 1rem 4rem;
+	}
+	.llistat-treballs-page main > section:nth-of-type(1) > div > img{
+		width: 100%;
 	}
 	.llistat-treballs-page main > h1{
 		font-size: 2rem;
@@ -485,6 +594,12 @@
 		margin: 0 0 2.3rem 0;
 		font-weight: 600;
 	}
+	.detall-treball-page main > section:nth-of-type(1) > article > picture{
+		margin: 0 0 2rem 0;
+	}
+	.detall-treball-page main > section:nth-of-type(1) > article > img{
+		margin: 0 auto 2.5rem auto;
+	}
 	.detall-treball-page main > section:nth-of-type(1) > article p{
 		font-size: 1.6rem;
 		line-height: 1.5;
@@ -499,14 +614,21 @@
 		color: rgb(0, 0, 0);
 		border-bottom: 1px dotted rgb(0, 0, 0);
 	}
-	.detall-treball-page main > section:nth-of-type(1) > article > header > div > ul:nth-of-type(1){
+	.detall-treball-page main > section:nth-of-type(1) > article > header > div > ul:nth-of-type(1),
+	.detall-treball-page main > section:nth-of-type(1) > article > div > ul:nth-of-type(1){
 		list-style: square;
 		margin: 0 0 2.5rem 2.4rem;
 	}
-	.detall-treball-page main > section:nth-of-type(1) > article > header > div > ul:nth-of-type(1) li{
+	.detall-treball-page main > section:nth-of-type(1) > article > header > div > ul:nth-of-type(1) li,
+	.detall-treball-page main > section:nth-of-type(1) > article > div > ul:nth-of-type(1) li{
 		font-size: 1.6rem;
 		line-height: 1.5;
 		margin: 0 0 0.4rem 0;
+	}
+	.detall-treball-page main > section:nth-of-type(1) > article > header > div > img{
+		margin: 2.5rem 0 5rem 0;
+		max-width: 400px;
+		width: 22rem;
 	}
 	.detall-treball-page main > section:nth-of-type(1) > article iframe{
 		margin: 0 0 2.2rem 0;
@@ -579,6 +701,17 @@
 	.detall-treball-page main > section:nth-of-type(1) blockquote cite{
 		color: #5F030E;
 		font-weight: 600;
+	}
+	.detall-treball-page main > section:nth-of-type(1) > article > div{
+		position: relative;
+	}
+	.detall-treball-page main > section:nth-of-type(1) > article > div > img{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+	.treball-2 main > section:nth-of-type(1) > article > img.logo-duran-animat{
+		width: 34rem;
 	}
 
 /* VÍDEOS STYLES */
@@ -709,7 +842,6 @@
 				padding: 3rem 0 2.4rem 0;
 			}
 			body > header > div > a{
-				width: 23rem;
 				margin: 0 auto 2.4rem auto;
 			}
 			nav.hamburger-menu{
@@ -905,6 +1037,9 @@
 				margin: 0 0 0.4rem 0;
 				font-size: 2rem;
 			}
+			.presentacio-page main > section:nth-of-type(2) > svg{
+				margin: 0 0 0 38rem;
+			}
 
 		/* LLISTAT DE TREBALLS */
 			.llistat-treballs-page main > h1{
@@ -1002,24 +1137,27 @@
 				width: 53rem;
 				grid-column: 1;
 			}
-			.detall-treball-page main > section:nth-of-type(1) > article > header img{
+			.detall-treball-page main > section:nth-of-type(1) > article > header > img{
 				grid-column: 1;
 			}
 			.detall-treball-page main > section:nth-of-type(1) > article > header > div{
 				grid-column: 2;
 				margin: 0;
 			}
-			.detall-treball-page main > section:nth-of-type(1) > article > header > div p{
+			.detall-treball-page main > section:nth-of-type(1) > article > header > div p,
+			.detall-treball-page main > section:nth-of-type(1) > article > div p{
 				font-size: 2em;
 				margin: 0 0 2.5rem 0;
 				font-style: italic;
 			}
-			.detall-treball-page main > section:nth-of-type(1) > article > header > div > ul:nth-of-type(1){
+			.detall-treball-page main > section:nth-of-type(1) > article > header > div > ul:nth-of-type(1),
+			.detall-treball-page main > section:nth-of-type(1) > article > div > ul:nth-of-type(1){
 				column-count: 2;
 				column-gap: 8rem;
 				margin: 0 0 2.5rem 4.4rem;
 			}
-			.detall-treball-page main > section:nth-of-type(1) > article > header > div > ul:nth-of-type(1) li{
+			.detall-treball-page main > section:nth-of-type(1) > article > header > div > ul:nth-of-type(1) li,
+			.detall-treball-page main > section:nth-of-type(1) > article > div > ul:nth-of-type(1) li{
 				font-size: 2rem;
 			}
 			.detall-treball-page main > section:nth-of-type(1) > article p{
@@ -1064,6 +1202,17 @@
 			.treball-3 main > section:nth-of-type(1) > article iframe{
 				width: 90rem;
 				height: 51rem;
+			}
+			.detall-treball-page main > section:nth-of-type(1) > article > header > div > img{
+				margin: 9.5rem 0 0 0;
+			}
+			.detall-treball-page main > section:nth-of-type(1) > article > div > img {
+				left: 28%;
+				width: 17rem;
+				right: inherit;
+			}
+			.treball-2 main > section:nth-of-type(1) > article > img.logo-duran-animat{
+				width: 60rem;
 			}
 
 		/* ENLLAÇOS */
@@ -1156,6 +1305,9 @@
 			.presentacio-page main > section:nth-of-type(2) > iframe{
 				width: 111rem;
 			}
+			.presentacio-page main > section:nth-of-type(2) > svg{
+				margin: 0 0 0 34rem;
+			}
 
 		/* LLISTAT DE TREBALLS */
 			.llistat-treballs-page main > section:nth-of-type(1){
@@ -1168,6 +1320,23 @@
 			}
 			.detall-treball-page main > section:nth-of-type(1){
 				padding: 0;
+			}
+			.detall-treball-page main > section:nth-of-type(1) > article > picture{
+				margin: 0 0 5rem 0;
+			}
+			.detall-treball-page main > section:nth-of-type(1) > article > div{
+				position: relative;
+			}
+			.detall-treball-page main > section:nth-of-type(1) > article > div > img{
+				width: auto;
+			}
+			.treball-2 main > section:nth-of-type(1) > article > div{
+				background-color: #f0f0f0;
+				padding: 2rem;
+				margin: 0 auto 3rem auto;
+			}
+			.treball-2 main > section:nth-of-type(1) > article > img.logo-duran-animat{
+				width: 32rem;
 			}
 
 		/* VÍDEOS */
