@@ -115,23 +115,27 @@
 		text-decoration: none;
 	}
 	body > header > div > a svg line:nth-of-type(1){
-		animation: linia1 1s linear infinite;
+		animation-name: linia1;
+		animation-duration: 1s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-fill-mode: infinite;
 	}
 	body > header > div > a svg line:nth-of-type(2){
-		animation: linia2 1s linear infinite;
+		animation-name: linia2;
+		animation-duration: 1s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-fill-mode: infinite;
 	}
 
 	@keyframes linia1 {
-		0% { opacity: 0;transform: scale(1.5) }
-		1%{transform: scale(0)}
-		25% {opacity:1}
-		100% { opacity: 0;transform: scale(1.5);}
+		0% { transform: translate(0,50%);}
+		100% { transform: translate(0,0);}
 	}
 
 	@keyframes linia2 {
-		0% { opacity: 0; transform: translate(0,-50%); }
-		1% { transform: translate(0,-50%); }
-		25% {opacity:1}
+		0% { transform: translate(0,-50%); }
 		100% { transform: translate(0,0); }
 	}
 
