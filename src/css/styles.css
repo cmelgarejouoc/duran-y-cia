@@ -115,7 +115,7 @@
 		text-decoration: none;
 	}
 	body > header > div > a svg line:nth-of-type(1){
-		animation-name: linia1;
+		animation-name: rotate;
 		animation-duration: 1s;
 		animation-timing-function: linear;
 		animation-iteration-count: infinite;
@@ -127,6 +127,12 @@
 		animation-timing-function: linear;
 		animation-iteration-count: infinite;
 		animation-fill-mode: infinite;
+	}
+
+	@keyframes rotate {
+		100% {
+			transform: rotate(360deg);
+		}
 	}
 
 	@keyframes linia1 {
