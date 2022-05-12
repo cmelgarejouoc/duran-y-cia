@@ -118,15 +118,13 @@
 		animation-name: linia1;
 		animation-duration: 3s;
 		animation-timing-function: ease-out;
-		animation-iteration-count: normal;
-		animation-fill-mode: infinite;
+		animation-iteration-count: 1;
 	}
 	body > header > div > a svg line:nth-of-type(2){
 		animation-name: linia2;
 		animation-duration: 3s;
 		animation-timing-function: ease-out;
-		animation-iteration-count: normal;
-		animation-fill-mode: infinite;
+		animation-iteration-count: 1;
 	}
 
 	@keyframes linia1 {
@@ -495,14 +493,12 @@
 		animation-duration: 3s;
 		animation-timing-function: linear;
 		animation-iteration-count: infinite;
-		animation-fill-mode: infinite;
 	}
 	.presentacio-page main > section:nth-of-type(2) > svg line:nth-of-type(2){
 		animation-name: presentacio_linia2;
 		animation-duration: 3s;
 		animation-timing-function: linear;
 		animation-iteration-count: infinite;
-		animation-fill-mode: infinite;
 	}
 
 	@keyframes presentacio_linia1 {
