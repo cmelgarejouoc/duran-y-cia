@@ -118,31 +118,35 @@
 		animation-name: linia1;
 		animation-duration: 3s;
 		animation-timing-function: ease-out;
-		animation-iteration-count: infinite;
+		animation-iteration-count: normal;
 		animation-fill-mode: infinite;
 	}
 	body > header > div > a svg line:nth-of-type(2){
 		animation-name: linia2;
 		animation-duration: 3s;
 		animation-timing-function: ease-out;
-		animation-iteration-count: infinite;
+		animation-iteration-count: normal;
 		animation-fill-mode: infinite;
 	}
 
 	@keyframes linia1 {
 		from {
+			stroke: #ffffff;
 			transform: translateY(1px);
 		}
 		to {
+			stroke: #5F030E;
 			transform: translateY(78px);
 		}
 	}
 
 	@keyframes linia2 {
 		from {
+			stroke: #ffffff;
 			transform: translateY(0px);
 		}
 		to {
+			stroke: #5F030E;
 			transform: translateY(-78px);
 		}
 	}
@@ -487,20 +491,36 @@
 		width: 34rem;
 	}
 	.presentacio-page main > section:nth-of-type(2) > svg line:nth-of-type(1){
-		animation: presentacio_linia1 5s linear infinite;
+		animation-name: presentacio_linia1;
+		animation-duration: 3s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-fill-mode: infinite;
 	}
 	.presentacio-page main > section:nth-of-type(2) > svg line:nth-of-type(2){
-		animation: presentacio_linia2 5s linear infinite;
+		animation-name: presentacio_linia2;
+		animation-duration: 3s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-fill-mode: infinite;
 	}
 
 	@keyframes presentacio_linia1 {
-		0% { transform: translate(0,100%); }
-		100% { transform: translate(0,0); }
+		from {
+			transform: translateY(-2px);
+		}
+		to {
+			transform: translateY(39px);
+		}
 	}
 
 	@keyframes presentacio_linia2 {
-		0% { transform: translate(0,-100%); }
-		100% { transform: translate(0,0); }
+		from {
+			transform: translateY(0px);
+		}
+		to {
+			transform: translateY(-39px);
+		}
 	}
 
 /* LLISTAT TREBALLS STYLES */
