@@ -122,14 +122,16 @@
 	}
 
 	@keyframes linia1 {
-		0% { transform: translate(1px,50%);}
+		0% { opacity: 0; transform: translate(0,50%);}
 		1% { transform: translate(0,50%);}
+		25% {opacity:1}
 		100% { transform: translate(0,0);}
 	}
 
 	@keyframes linia2 {
-		0% { transform: translate(1px,-50%); }
+		0% { opacity: 0; transform: translate(0,-50%); }
 		1% { transform: translate(0,-50%); }
+		25% {opacity:1}
 		100% { transform: translate(0,0); }
 	}
 
