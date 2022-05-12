@@ -730,6 +730,14 @@
 	.treball-2 main > section:nth-of-type(1) > article > img.logo-duran-animat{
 		width: 34rem;
 	}
+	.detall-treball-page main > section:nth-of-type(1) > article > div h2,
+	.detall-treball-page main > section:nth-of-type(1) > article > div p {
+		color: initial;
+		margin: 0 0 2.5rem;
+		font-size: 2em;
+		font-style: italic;
+		font-weight: 400;
+	}
 
 /* VÍDEOS STYLES */
 	.videos-page main{
