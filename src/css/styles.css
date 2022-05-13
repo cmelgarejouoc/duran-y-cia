@@ -428,9 +428,9 @@
 		border-bottom: 1px dotted rgba(0,0,0,0.5);
 	}
 	.home-page main > section:nth-of-type(2) article > img{
-		animation: circle 8s infinite;
+		animation: ultims_treballs 8s infinite;
 	}
-	@keyframes circle {
+	@keyframes ultims_treballs {
 		0% { clip-path: polygon(50% 0%, 78% 0, 100% 0, 100% 56%, 100% 100%, 50% 100%, 0 100%, 0 54%, 0 0, 26% 0); }
 		50% { clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
 		100% { clip-path: polygon(50% 0%, 78% 0, 100% 0, 100% 56%, 100% 100%, 50% 100%, 0 100%, 0 54%, 0 0, 26% 0); }
