@@ -37,6 +37,7 @@ if(document.querySelector('.my-slider')){
 		navPosition: "bottom",
 		controls: false,
 		autoplayButtonOutput: false,
+		lazyload: true,
 		mode: "gallery"//"carousel" or "gallery"
 	});
 }
@@ -121,7 +122,7 @@ function renderVideosBy(field = 'date', order = 'asc'){
 
 		let li = document.createElement('li');
 		li.innerHTML= `
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/` + video.yt_id + `" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/` + video.yt_id + `" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		<p>` + video.title + ` <time datetime="` + video.date + `">` + formattedDate + `</time></p>`;
 		return li;
 	});

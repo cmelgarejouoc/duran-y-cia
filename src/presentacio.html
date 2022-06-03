@@ -14,10 +14,12 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap" rel="stylesheet">
 
-		<script src=https://cdn.jsdelivr.net/npm/jquery@3.6/dist/jquery.min.js></script>
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js" type="text/javascript"></script>
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/plugins/jquery.lazy.youtube.min.js" type="text/javascript"></script>
 
 		<link rel="stylesheet" href="css/styles.css" />
-		<script type="module" src="js/app.js"></script>
+		<script defer type="module" src="js/app.js"></script>
 	</head>
 
 	<body class="presentacio-page">
@@ -25,16 +27,10 @@
 			<div>
 				<a href="index.html">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="80" width="210">
-						<defs>
-							<style>
-								@import "https://fonts.googleapis.com/css2?family=Gravitas+One&amp;display=swap";
-							</style>
-						</defs>
+						<image href="images/d_c_header.jpg" width="210" height="80"/>
 
 						<line x1="0" x2="100%" y1="1" y2="1" stroke="#5F030E" stroke-width="1"/>
 						<line x1="0" x2="100%" y1="99%" y2="99%" stroke="#5F030E" stroke-width="1"/>
-
-						<text font-family="Gravitas One" text-anchor="middle" stroke="#5F030E" stroke-width="1" fill="#5F030E" font-size="80" y="70" x="105">d&amp;c</text>
 					</svg>
 
 					<p>Web oficial del grup Duran&Cia</p>
@@ -97,7 +93,7 @@
 					Una mica d’història
 				</h2>
 
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/Fb4a0gPC1PE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="560" height="315" data-src="https://www.youtube.com/embed/Fb4a0gPC1PE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 				<p>
 					Quan Carlos Duran (<i lang="en">front-man</i> i ànima de Caras Raras) es troba amb Carles Melgarejo (excomponent de Barrock, Tradivàrius i Sòviets i component del grup de versions Hot Rocks), Franck Castillo (excomponent de Tradivàrius i Sòviets i component de Lipstick) i Xavi Oró (excomponent de Barrock, Tradivàrius i Sòviets i component de Coriolà i del grup de versions Hot Rocks), gràcies a Quimo Benavent (cantant de Sòviets), es tanquen a la seva destil·leria particular per elaborar una selecta mixtura carregada de lletres intel·ligents, divertides i crítiques, molt <i lang="en">rock & roll</i> i pinzellades diverses de l'extensa paleta nodrida en les experiències musicals i vitals anteriors dels seus heterodoxos integrants (<i lang="en">pop</i>, progressiu, <i lang="en">funk</i>, <i lang="en">folk-rock</i>).
@@ -109,7 +105,7 @@
 					 sizes="(max-width: 768px) 480px, 
 					 		 906px"
 					 src="images/d&c-foto-grup-906w.jpg?as=webp"
-					 alt="Sessió de fotos per la portada del disc de Duran&Cia."/>
+					 alt="Sessió de fotos per la portada del disc de Duran&Cia." loading="lazy" width="906" height="606"/>
 
 				<p>
 					Han realitzat diverses actuacions a sales del circuit de rock de Barcelona i han enregistrat dos treballs discogràfics disponibles a Amazon, Amazon Music i a Spotify i un videoclip promocional.
@@ -159,17 +155,13 @@
 			<div>
 				<a href="index.html">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="45" width="140">
-						<defs>
-							<style>
-								@import "https://fonts.googleapis.com/css2?family=Gravitas+One&amp;display=swap";
-							</style>
-						</defs>
+						<image href="images/d_c_footer.jpg" width="140" height="45"/>
 
 						<line x1="0" x2="100%" y1="0" y2="0" stroke="#ffffff" stroke-width="1"/>
 						<line x1="0" x2="100%" y1="100%" y2="100%" stroke="#ffffff" stroke-width="1"/>
-
-						<text font-family="Gravitas One" text-anchor="middle" stroke="#ffffff" stroke-width="1" fill="#ffffff" font-size="50" y="40" x="71">d&amp;c</text>
 					</svg>
+
+					<p>Web oficial del grup Duran&Cia</p>
 				</a>
 
 				<ul>
