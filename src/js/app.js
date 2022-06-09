@@ -183,3 +183,14 @@ window.addEventListener('scroll', function() {
 		header.classList.remove("hidden");
 	}
 });
+
+if(document.querySelector('.soundcloud-wrapper')){
+	let soundcloudWrappper = document.querySelector('.soundcloud-wrapper');
+
+	const soundcloudElement = document.querySelector('.soundcloud-player');
+
+	soundcloudElement.addEventListener('click', (event) => {
+		soundcloudWrappper.innerHTML= `
+		<iframe width="907" height="166" allow="autoplay" src="` + soundcloudWrappper.getAttribute('data-sndcld-url') + `" loading="lazy"></iframe>`;		
+	});
+}

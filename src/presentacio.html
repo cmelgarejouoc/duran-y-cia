@@ -8,16 +8,39 @@
 		<meta name="description" content="Pàgina web de Duran&Cia.">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 
-		<link rel="icon" href="images/icon.png" type="image/x-icon">
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+		<style type="text/css">
+			/*! hamburger-menu v0.4.0 ☰ https://github.com/center-key/hamburger-menu ☰ MIT License */
+			body{margin:0;padding-bottom:0;padding-top:0}nav.hamburger-menu a.hamburger{background-color:inherit;color:inherit;display:none}nav.hamburger-menu aside{background-color:inherit;bottom:0;float:none;left:0;margin:0;overflow-y:scroll;padding:0;position:fixed;top:0;z-index:5000}nav.hamburger-menu aside ul{list-style:none;margin:0;padding:0}nav.hamburger-menu aside ul li a,nav.hamburger-menu aside ul li span{border-bottom:1px solid transparent;border-top:1px solid transparent;color:inherit;cursor:pointer;display:block;font-size:1.1rem;font-weight:700;padding:10px 0 10px 15px;text-align:left;text-decoration:none;transition:all .4s}nav.hamburger-menu aside ul li.current>a,nav.hamburger-menu aside ul li.current>span{border-color:inherit;cursor:default}nav.hamburger-menu aside ul ul li a,nav.hamburger-menu aside ul ul li span{font-size:.8rem;padding:4px 0 4px 30px}@media (max-width:667px){html body{cursor:pointer;padding:35px 10px 0}nav.hamburger-menu{cursor:auto}nav.hamburger-menu a.hamburger{display:block;font-size:1.4rem;font-weight:700;left:0;padding:6px 10px 8px 8px;position:absolute;text-decoration:none;top:0}nav.hamburger-menu a.hamburger:not(:hover){transition:opacity .5s .8s}nav.hamburger-menu a.hamburger:hover{opacity:0}nav.hamburger-menu aside{max-width:0;overflow:hidden;transition:max-width 1s}nav.hamburger-menu aside ul li{white-space:nowrap}nav.hamburger-menu:not(.collapse-menu):hover .hamburger+aside{max-width:400px;overflow-y:scroll}}body{padding-left:200px;padding-right:50px}nav.hamburger-menu aside{width:150px}nav.hamburger-menu{background-color:teal;color:#dcdcdc}nav.hamburger-menu aside ul li.current{border-color:#fff}nav.hamburger-menu aside ul li.current>a,nav.hamburger-menu aside ul li.current>span,nav.hamburger-menu aside ul li>a:hover,nav.hamburger-menu aside ul li>span:hover{background-color:#008b8b;color:#fff}
+
+			/* Critical CSS */
+			html body{padding:35px 10px 0 10px;cursor:pointer}nav.hamburger-menu{cursor:auto}nav.hamburger-menu a.hamburger{display:block;position:absolute;top:0;left:0;font-size:1.4rem;font-weight:700;text-decoration:none;padding:6px 10px 8px 8px}nav.hamburger-menu a.hamburger:not(:hover){transition:opacity .5s .8s}nav.hamburger-menu a.hamburger:hover{opacity:0}nav.hamburger-menu aside{max-width:0;overflow:hidden;transition:max-width 1s}nav.hamburger-menu aside ul li{white-space:nowrap}nav.hamburger-menu:not(.collapse-menu):hover .hamburger+aside{max-width:400px;overflow-y:scroll}*{margin:0 auto;padding:0;box-sizing:border-box}html{font-family:Raleway,sans-serif;font-size:2.27vw;color:#000;box-sizing:border-box}html body{padding:0;cursor:initial}abbr{text-decoration:none}img{max-width:100%;display:block}ul{list-style:none}picture,picture img{display:block}picture img{width:100%;height:auto}h1 i,h2 i{font-style:initial}body>header{position:sticky;top:0;background-color:#fff;padding:5.2rem 0 4rem;box-shadow:0 3px 16px 0 rgba(74,74,74,.2);z-index:10;visibility:visible;opacity:1;transition:opacity .5s linear}body>header.hidden{visibility:hidden;opacity:0;transition:visibility 0s .5s,opacity .5s linear}body>header>div>a{display:block;width:max-content;margin:0 auto 0 auto;text-align:center;text-decoration:none}body>header>div>a svg line:nth-of-type(1){animation-name:linia1;animation-duration:3s;animation-timing-function:ease-out;animation-iteration-count:1}body>header>div>a svg line:nth-of-type(2){animation-name:linia2;animation-duration:3s;animation-timing-function:ease-out;animation-iteration-count:1}@keyframes linia1{from{transform:translateY(1px)}to{transform:translateY(78px)}}@keyframes linia2{from{transform:translateY(0)}to{transform:translateY(-78px)}}body>header>div>a>p{font-size:1.5rem;color:#5f030e}body>header>div>a img{width:27.1rem}nav.hamburger-menu aside{width:31rem;background-color:#f1e9e9}nav.hamburger-menu{color:#5f030e;background-color:#fff}nav.hamburger-menu aside>ul{background-image:url("./images/separador-vermell.svg");background-repeat:no-repeat;background-position:bottom left;margin:8rem 0 0 2.2rem;padding:0 0 1rem 0}nav.hamburger-menu aside>ul:nth-of-type(2){background-image:url("./images/separador-gris.svg");margin-top:22rem}nav.hamburger-menu aside>ul:nth-of-type(2) li a,nav.hamburger-menu aside>ul:nth-of-type(2) li span{color:#000;font-size:1.7rem}nav.hamburger-menu aside ul li a,nav.hamburger-menu aside ul li span{font-size:2.1rem;padding:0;margin:0 0 1.3rem 1rem;max-width:max-content}nav.hamburger-menu aside ul li.current{border-color:transparent}nav.hamburger-menu aside ul li.current>a,nav.hamburger-menu aside ul li.current>span,nav.hamburger-menu aside ul li>a:hover,nav.hamburger-menu aside ul li>span:hover{color:rgba(0,0,0,.5);background-color:#f1e9e9}nav.hamburger-menu a.hamburger{font-size:3rem;padding:2rem 1.4rem}@media screen and (min-width:667px){html{font-size:.8vw}html body{background-color:#f1e9e9}nav.hamburger-menu:not(.collapse-menu):hover .hamburger+aside{max-width:initial;overflow-y:initial}nav.hamburger-menu a.hamburger:not(:hover),nav.hamburger-menu aside>ul:nth-of-type(2){display:none}nav.hamburger-menu aside{max-width:100%;position:static;background-color:#fff}nav.hamburger-menu aside>ul{margin:0;background:0 0;padding:0}nav.hamburger-menu aside ul li a,nav.hamburger-menu aside ul li span{margin:0}body>header{padding:3rem 0 2.4rem 0}body>header>div>a{margin:0 auto 2.4rem auto}nav.hamburger-menu{margin-bottom:0}nav.hamburger-menu aside{width:43rem;margin:0 auto;text-align:center}nav.hamburger-menu aside ul li{display:inline-block;margin:0 1.6rem}nav.hamburger-menu aside ul li a,nav.hamburger-menu aside ul li span{text-transform:uppercase;font-size:2rem}nav.hamburger-menu aside ul li.current>a,nav.hamburger-menu aside ul li.current>span,nav.hamburger-menu aside ul li>a:hover,nav.hamburger-menu aside ul li>span:hover{background-color:transparent;color:#dd051f;text-decoration:underline}}@media screen and (min-width:1030px){html{font-size:10px}nav.hamburger-menu aside ul li a,nav.hamburger-menu aside ul li span{text-transform:uppercase;font-size:1.8rem}}
+
+			body > main > header{
+				max-width: 2145px;
+				width: 100%;
+				height: 29.4em;
+				overflow: hidden;
+			}
+			@media screen and (min-width: 1030px){
+				body > main > header{
+					height: auto;
+				}
+			}
+		</style>
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap" rel="stylesheet">
+		<link rel="preload" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap"></noscript>
+
+		<link rel="preload" href="css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript><link rel="stylesheet" href="css/styles.css"></noscript>
 
 		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script defer src="https://cdn.jsdelivr.net/npm/youtube-lite/dist/youtube-lite.min.js"></script>
 
-		<link rel="stylesheet" href="css/styles.css" />
 		<script type="module" src="js/app.js"></script>
 	</head>
 
@@ -61,7 +84,7 @@
 					<source media="(min-width: 1920px)" srcset="images/d&c-sidecar-moment-1-d_1920w.jpg?as=webp" type="image/webp">
 					<source media="(min-width: 1440px)" srcset="images/d&c-sidecar-moment-1-d_1440w.jpg?as=webp" type="image/webp">
 					<source media="(min-width: 668px)" srcset="images/d&c-sidecar-moment-1-d_1030w.jpg?as=webp" type="image/webp">
-					<img src="images/d&c-sidecar-moment-1-d_1920w.jpg?as=webp" alt="Duran&Cia al Sidecar" title="">
+					<img src="images/d&c-sidecar-moment-1-d_1920w.jpg?as=webp" alt="Duran&Cia al Sidecar" title="" width="480" height="320">
 				</picture>
 			</header>
 
@@ -98,13 +121,12 @@
 					Quan Carlos Duran (<i lang="en">front-man</i> i ànima de Caras Raras) es troba amb Carles Melgarejo (excomponent de Barrock, Tradivàrius i Sòviets i component del grup de versions Hot Rocks), Franck Castillo (excomponent de Tradivàrius i Sòviets i component de Lipstick) i Xavi Oró (excomponent de Barrock, Tradivàrius i Sòviets i component de Coriolà i del grup de versions Hot Rocks), gràcies a Quimo Benavent (cantant de Sòviets), es tanquen a la seva destil·leria particular per elaborar una selecta mixtura carregada de lletres intel·ligents, divertides i crítiques, molt <i lang="en">rock & roll</i> i pinzellades diverses de l'extensa paleta nodrida en les experiències musicals i vitals anteriors dels seus heterodoxos integrants (<i lang="en">pop</i>, progressiu, <i lang="en">funk</i>, <i lang="en">folk-rock</i>).
 				</p>
 
-				<!-- Responsive images: Different sizes -->
-				<img srcset="images/d&c-foto-grup-480w.jpg?as=webp 480w, 
-							 images/d&c-foto-grup-906w.jpg?as=webp 906w" 
-					 sizes="(max-width: 768px) 480px, 
-					 		 906px"
-					 src="images/d&c-foto-grup-906w.jpg?as=webp"
-					 alt="Sessió de fotos per la portada del disc de Duran&Cia." loading="lazy" width="906" height="606"/>
+				<!-- Responsive images: Art direction -->
+				<picture>
+					<source media="(max-width:667px)" srcset="images/d&c-foto-grup-480w.jpg?as=webp" type="image/webp">
+					<source media="(min-width: 668px)" srcset="images/d&c-foto-grup-906w.jpg?as=webp" type="image/webp">
+					<img src="images/d&c-foto-grup-906w.jpg?as=webp" alt="Sessió de fotos per la portada del disc de Duran&Cia." title="" width="906" height="606">
+				</picture>
 
 				<p>
 					Han realitzat diverses actuacions a sales del circuit de rock de Barcelona i han enregistrat dos treballs discogràfics disponibles a Amazon, Amazon Music i a Spotify i un videoclip promocional.
@@ -171,8 +193,8 @@
 				</ul>
 
 				<ul>
-					<li><a href="https://www.facebook.com/DuranCia-156336397420" target="_blank"><img src="images/facebook-icon.svg" alt="Facebook"></a></li>
-					<li><a href="https://www.youtube.com/user/DuranYCia/videos" target="_blank"><img src="images/youtube-icon.svg" alt="Youtube"></a></li>
+					<li><a href="https://www.facebook.com/DuranCia-156336397420" target="_blank"><img src="images/facebook-icon.svg" alt="Facebook" width="29" height="29" loading="lazy"></a></li>
+					<li><a href="https://www.youtube.com/user/DuranYCia/videos" target="_blank"><img src="images/youtube-icon.svg" alt="Youtube" width="54" height="44" loading="lazy"></a></li>
 				</ul>
 				
 				<p>
