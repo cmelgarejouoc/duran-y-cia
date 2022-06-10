@@ -40,7 +40,7 @@ if(document.querySelector('.my-slider')){
 		navPosition: "bottom",
 		controls: false,
 		autoplayButtonOutput: false,
-		lazyload: true,
+		lazyload: false,
 		mode: "gallery"//"carousel" or "gallery"
 	});
 }
