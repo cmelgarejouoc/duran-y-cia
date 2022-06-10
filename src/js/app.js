@@ -2,14 +2,9 @@ const name = 'world';
 console.log(`Hello ${name}`);
 
 /*
-	Importem la llibreria pel menú hamburguesa
-*/
-//import 'hamburger-menu';
-
-/*
 	Importem la llibreria per l'slider
 */
-//import {tns} from 'tiny-slider';
+import {tns} from 'tiny-slider';
 
 
 /*
