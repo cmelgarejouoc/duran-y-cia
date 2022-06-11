@@ -6,7 +6,6 @@ console.log(`Hello ${name}`);
 */
 import {tns} from 'tiny-slider';
 
-
 /*
 	Importem la llibreria per manipular dates
 */
