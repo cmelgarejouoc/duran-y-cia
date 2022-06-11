@@ -395,6 +395,9 @@
 
 /* MEDIA QUERIES FABLETS & TABLETS OR MOBILE LANDSCAPE*/
 	@media screen and (min-width: 667px){
+		nav.hamburger-menu aside > ul {
+			border-bottom: none;
+		}
 		/* FOOTER */
 			body > footer{
 				padding: 6.4rem 2rem 5.4rem;
