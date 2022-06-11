@@ -25,6 +25,17 @@
 
 			/* Critical CSS - This page */
 			body>main>header{max-width:2145px;width:100%;height:29.4em;overflow:hidden}@media screen and (min-width:1030px){body>main>header{height:auto}}.videos-page main{margin:0;padding:0}.videos-page main section{background-color:#f1e9e9;padding:4rem 4rem 2rem 4rem}.videos-page main section h1{font-size:2rem;color:#5f030e;margin:0 0 2.3rem 0}.videos-page main section>div{max-width:1163px;margin:0 auto;text-align:right}.videos-page main section>div label{font-size:1.4rem;margin:0 .5rem 0 0}.videos-page main section>div select{margin:0 0 2rem 0;display:inline-block;font-size:1.4rem}.videos-page main section>ul li{background-color:#fff}.videos-page main section>ul li iframe{width:81.8vw;height:49.3vw;border:0}.videos-page main section>ul li p{padding:.7rem 1rem;margin:0 0 2rem 0;font-size:1.6rem;font-style:italic;font-weight:600;color:#5f030e}
+
+			body>main>section>p{
+				font-size: 1.6rem;
+				line-height: 1.5;
+				margin: 0 0 3rem 0;
+			}
+			@media screen and (min-width:1030px){
+				body>main>section>p{
+					font-size: 2rem;
+				}
+			}
 		</style>
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -70,8 +81,32 @@
 		</header>
 
 		<main>
+			<header>
+				<!-- Responsive images: Art direction -->
+				<picture>
+					<source media="(max-width:480px)" srcset="images/d&c-slow-m_450w.jpg?as=webp" type="image/webp">
+					<source media="(max-width:667px)" srcset="images/d&c-slow-m_667w.jpg?as=webp" type="image/webp">
+					<source media="(min-width: 1920px)" srcset="images/d&c-slow-d_1920w.jpg?as=webp" type="image/webp">
+					<source media="(min-width: 1440px)" srcset="images/d&c-slow-d_1440w.jpg?as=webp" type="image/webp">
+					<source media="(min-width: 668px)" srcset="images/d&c-slow-d_1030w.jpg?as=webp" type="image/webp">
+					<img src="images/d&c-slow-d_1920w.jpg?as=webp" alt="Duran&Cia al Slow" title="" width="480" height="320">
+				</picture>
+			</header>
+
 			<section>
 				<h1>Vídeos destacats</h1>
+
+				<p>
+					A continuació es poden veure una serie vídeos destacats de diversos moments de la trajectòria de Duran&Cia entre el 2004 i el 2009.
+				</p>
+
+				<p>
+					Els vídeos corresponen a la primera actuació al 2004, dues actuacions al Sidecar i al Zac Club i una versió acústica de "Sabor añejo" que es va dur a terme a COM Ràdio després d'una entrevista.
+				</p>
+
+				<p>
+					Es poden ordenar per títol o per data mitjançant el desplegable amb l'etiqueta "Ordenar".
+				</p>
 
 				<div>
 					<label for="order-select">Ordenar:</label>
