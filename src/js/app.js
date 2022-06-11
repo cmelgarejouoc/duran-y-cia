@@ -2,6 +2,16 @@ const name = 'world';
 console.log(`Hello ${name}`);
 
 /*
+	Importem la llibreria pel menú hamburguesa
+*/
+import 'hamburger-menu';
+
+/*
+	Importem la llibreria per l'slider
+*/
+import {tns} from 'tiny-slider';
+
+/*
 	Importem la llibreria per manipular dates
 */
 import date from 'date-and-time';
@@ -10,6 +20,27 @@ import date from 'date-and-time';
 	Importem un arxiu json amb el llistat de vídeos amb títol, id de Youtube i data d'enregistrament
 */
 import * as data from './videos.json';
+
+/*
+	A la home mirem si està definit el selector my-slider i si és així fem la crida a l'slider
+	amb els seus paràmetres de configuració
+*/
+if(document.querySelector('.my-slider')){
+	var slider = tns({
+		container: '.my-slider',
+		items: 1,
+		slideBy: 'page',
+		autoplay: true,
+		speed: 2500,
+		autoplayTimeout: 7000,
+		nav: true,
+		navPosition: "bottom",
+		controls: false,
+		autoplayButtonOutput: false,
+		lazyload: true,
+		mode: "gallery"//"carousel" or "gallery"
+	});
+}
 
 /*
 	Funció orderVideos que utilitzarem a la pàgina de vídeos per ordenar les dades que tenim al json videos.json
