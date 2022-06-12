@@ -1,0 +1,39 @@
+{
+  "name": "duran-y-cia",
+  "version": "1.0.0",
+  "description": "duran&cia web",
+  "source": [
+    "src/index.html"
+  ],
+  "browserslist": "> 0.5%, last 6 versions",
+  "scripts": {
+    "parcel:dev": "parcel",
+    "parcel:build": "parcel build",
+    "clean": "rimraf dist .parcel-cache",
+    "start": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean parcel:build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmelgarejouoc/duran-y-cia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmelgarejouoc/duran-y-cia/issues"
+  },
+  "homepage": "https://github.com/cmelgarejouoc/duran-y-cia#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.5.0",
+    "rimraf": "^3.0.2",
+    "sharp": "^0.29.3"
+  },
+  "dependencies": {
+    "date-and-time": "^2.3.1",
+    "hamburger-menu": "^0.4.0",
+    "tiny-slider": "^2.9.4"
+  }
+}

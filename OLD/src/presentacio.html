@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ca-ES">
+	<head>
+		<title>Presentació - Duran&Cia</title>
+
+		<meta charset="utf-8">
+		<meta name="author" content="Carles Melgarejo Vila">
+		<meta name="description" content="Pàgina web de Duran&Cia.">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+		<link rel="preload" as="image" href="images/d_c_header.jpg?as=webp" />
+		<link rel="preload" as="image" href="images/d&c-sidecar-moment-1-m_450w.jpg?as=webp" />
+
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/youtube-lite/dist/youtube-lite.min.js"></script>
+
+		<style type="text/css">
+			/*! hamburger-menu v0.4.0 ☰ https://github.com/center-key/hamburger-menu ☰ MIT License */
+			body{margin:0;padding-bottom:0;padding-top:0}nav.hamburger-menu a.hamburger{background-color:inherit;color:inherit;display:none}nav.hamburger-menu aside{background-color:inherit;bottom:0;float:none;left:0;margin:0;overflow-y:scroll;padding:0;position:fixed;top:0;z-index:5000}nav.hamburger-menu aside ul{list-style:none;margin:0;padding:0}nav.hamburger-menu aside ul li a,nav.hamburger-menu aside ul li span{border-bottom:1px solid transparent;border-top:1px solid transparent;color:inherit;cursor:pointer;display:block;font-size:1.1rem;font-weight:700;padding:10px 0 10px 15px;text-align:left;text-decoration:none;transition:all .4s}nav.hamburger-menu aside ul li.current>a,nav.hamburger-menu aside ul li.current>span{border-color:inherit;cursor:default}nav.hamburger-menu aside ul ul li a,nav.hamburger-menu aside ul ul li span{font-size:.8rem;padding:4px 0 4px 30px}@media (max-width:667px){html body{cursor:pointer;padding:35px 10px 0}nav.hamburger-menu{cursor:auto}nav.hamburger-menu a.hamburger{display:block;font-size:1.4rem;font-weight:700;left:0;padding:6px 10px 8px 8px;position:absolute;text-decoration:none;top:0}nav.hamburger-menu a.hamburger:not(:hover){transition:opacity .5s .8s}nav.hamburger-menu a.hamburger:hover{opacity:0}nav.hamburger-menu aside{max-width:0;overflow:hidden;transition:max-width 1s}nav.hamburger-menu aside ul li{white-space:nowrap}nav.hamburger-menu:not(.collapse-menu):hover .hamburger+aside{max-width:400px;overflow-y:scroll}}body{padding-left:200px;padding-right:50px}nav.hamburger-menu aside{width:150px}nav.hamburger-menu{background-color:teal;color:#dcdcdc}nav.hamburger-menu aside ul li.current{border-color:#fff}nav.hamburger-menu aside ul li.current>a,nav.hamburger-menu aside ul li.current>span,nav.hamburger-menu aside ul li>a:hover,nav.hamburger-menu aside ul li>span:hover{background-color:#008b8b;color:#fff}
+
+			/* Critical CSS - Global*/
+			html body{padding:35px 10px 0 10px;cursor:pointer}nav.hamburger-menu{cursor:auto}nav.hamburger-menu a.hamburger{display:block;position:absolute;top:0;left:0;font-size:1.4rem;font-weight:700;text-decoration:none;padding:6px 10px 8px 8px}nav.hamburger-menu a.hamburger:not(:hover){transition:opacity .5s .8s}nav.hamburger-menu a.hamburger:hover{opacity:0}nav.hamburger-menu aside{max-width:0;overflow:hidden;transition:max-width 1s}nav.hamburger-menu aside ul li{white-space:nowrap}nav.hamburger-menu:not(.collapse-menu):hover .hamburger+aside{max-width:400px;overflow-y:scroll}*{margin:0 auto;padding:0;box-sizing:border-box}html{font-family:Raleway,sans-serif;font-size:2.27vw;color:#000;box-sizing:border-box}html body{padding:0;cursor:initial}abbr{text-decoration:none}img{max-width:100%;display:block}ul{list-style:none}picture,picture img{display:block}picture img{width:100%;height:auto}h1 i,h2 i{font-style:initial}body>header{position:sticky;top:0;background-color:#fff;padding:5.2rem 0 4rem;box-shadow:0 3px 16px 0 rgba(74,74,74,.2);z-index:10;visibility:visible;opacity:1;transition:opacity .5s linear}body>header.hidden{visibility:hidden;opacity:0;transition:visibility 0s .5s,opacity .5s linear}body>header>div>a{display:block;width:max-content;margin:0 auto 0 auto;text-align:center;text-decoration:none}body>header>div>a svg line:nth-of-type(1){animation-name:linia1;animation-duration:3s;animation-timing-function:ease-out;animation-iteration-count:1}body>header>div>a svg line:nth-of-type(2){animation-name:linia2;animation-duration:3s;animation-timing-function:ease-out;animation-iteration-count:1}@keyframes linia1{from{transform:translateY(1px)}to{transform:translateY(78px)}}@keyframes linia2{from{transform:translateY(0)}to{transform:translateY(-78px)}}body>header>div>a>p{font-size:1.5rem;color:#5f030e}body>header>div>a img{width:27.1rem}nav.hamburger-menu aside{width:31rem;background-color:#f1e9e9}nav.hamburger-menu{color:#5f030e;background-color:#fff}nav.hamburger-menu aside>ul{background-image:url("./images/separador-vermell.svg");background-repeat:no-repeat;background-position:bottom left;margin:8rem 0 0 2.2rem;padding:0 0 1rem 0}nav.hamburger-menu aside>ul:nth-of-type(2){background-image:url("./images/separador-gris.svg");margin-top:22rem}nav.hamburger-menu aside>ul:nth-of-type(2) li a,nav.hamburger-menu aside>ul:nth-of-type(2) li span{color:#000;font-size:1.7rem}nav.hamburger-menu aside ul li a,nav.hamburger-menu aside ul li span{font-size:2.1rem;padding:0;margin:0 0 1.3rem 1rem;max-width:max-content}nav.hamburger-menu aside ul li.current{border-color:transparent}nav.hamburger-menu aside ul li.current>a,nav.hamburger-menu aside ul li.current>span,nav.hamburger-menu aside ul li>a:hover,nav.hamburger-menu aside ul li>span:hover{color:rgba(0,0,0,.5);background-color:#f1e9e9}nav.hamburger-menu a.hamburger{font-size:3rem;padding:2rem 1.4rem}@media screen and (min-width:667px){html{font-size:.8vw}html body{background-color:#f1e9e9}nav.hamburger-menu:not(.collapse-menu):hover .hamburger+aside{max-width:initial;overflow-y:initial}nav.hamburger-menu a.hamburger:not(:hover),nav.hamburger-menu aside>ul:nth-of-type(2){display:none}nav.hamburger-menu aside{max-width:100%;position:static;background-color:#fff}nav.hamburger-menu aside>ul{margin:0;background:0 0;padding:0}nav.hamburger-menu aside ul li a,nav.hamburger-menu aside ul li span{margin:0}body>header{padding:3rem 0 2.4rem 0}body>header>div>a{margin:0 auto 2.4rem auto}nav.hamburger-menu{margin-bottom:0}nav.hamburger-menu aside{width:43rem;margin:0 auto;text-align:center}nav.hamburger-menu aside ul li{display:inline-block;margin:0 1.6rem}nav.hamburger-menu aside ul li a,nav.hamburger-menu aside ul li span{text-transform:uppercase;font-size:2rem}nav.hamburger-menu aside ul li.current>a,nav.hamburger-menu aside ul li.current>span,nav.hamburger-menu aside ul li>a:hover,nav.hamburger-menu aside ul li>span:hover{background-color:transparent;color:#dd051f;text-decoration:underline}}@media screen and (min-width:1030px){html{font-size:10px}nav.hamburger-menu aside ul li a,nav.hamburger-menu aside ul li span{text-transform:uppercase;font-size:1.8rem}}
+
+			/* Critical CSS - This page */
+			body>main>header{max-width:2145px;width:100%;height:29.4em;overflow:hidden}@media screen and (min-width:1030px){body>main>header{height:auto}}.presentacio-page main{margin:0;padding:0}.presentacio-page main>section:nth-of-type(1){background-color:#f1e9e9;padding:4rem 4rem 2rem 4rem}.presentacio-page main>section:nth-of-type(1) h1{font-size:2rem;color:#5f030e;margin:0 0 2.3rem 0}.presentacio-page main>section:nth-of-type(1)>p{font-size:1.6rem;line-height:1.5;margin:0 0 3rem 0}
+		</style>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="preload" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap"></noscript>
+
+		<link rel="preload" href="css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript><link rel="stylesheet" href="css/styles.css"></noscript>
+
+		<script type="module" src="js/app.js"></script>
+	</head>
+
+	<body class="presentacio-page">
+		<header id="top">
+			<div>
+				<a href="index.html">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="80" width="210">
+						<image href="images/d_c_header.jpg?as=webp" width="210" height="80"/>
+
+						<line x1="0" x2="100%" y1="1" y2="1" stroke="#5F030E" stroke-width="1"/>
+						<line x1="0" x2="100%" y1="99%" y2="99%" stroke="#5F030E" stroke-width="1"/>
+					</svg>
+
+					<p>Web oficial del grup Duran&Cia</p>
+				</a>
+
+				<nav class=hamburger-menu>
+					<a class=hamburger href=#>&#9776;</a>
+					<aside>
+						<ul>
+							<li><a href="presentacio.html">Presentació</a></li>
+							<li><a href="llistat-treballs.html">Treballs</a></li>
+							<li><a href="videos.html">Vídeos</a></li>
+						</ul>
+
+						<ul>	
+							<li><a href="enllacos.html">Enllaços</a></li>
+						</ul>
+				   </aside>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<header>
+				<!-- Responsive images: Art direction -->
+				<picture>
+					<source media="(max-width:480px)" srcset="images/d&c-sidecar-moment-1-m_450w.jpg?as=webp" type="image/webp">
+					<source media="(max-width:667px)" srcset="images/d&c-sidecar-moment-1-m_667w.jpg?as=webp" type="image/webp">
+					<source media="(min-width: 1920px)" srcset="images/d&c-sidecar-moment-1-d_1920w.jpg?as=webp" type="image/webp">
+					<source media="(min-width: 1440px)" srcset="images/d&c-sidecar-moment-1-d_1440w.jpg?as=webp" type="image/webp">
+					<source media="(min-width: 668px)" srcset="images/d&c-sidecar-moment-1-d_1030w.jpg?as=webp" type="image/webp">
+					<img src="images/d&c-sidecar-moment-1-d_1920w.jpg?as=webp" alt="Duran&Cia al Sidecar" title="" width="480" height="320">
+				</picture>
+			</header>
+
+			<section>
+				<h1>
+					Presentació
+				</h1>
+
+				<p>
+					Aquesta pàgina <i lang="en">web</i> mostra la trajectòria de la banda de <i lang="en">rock</i> barcelonina Duran&Cia, formada l'any 2004.
+				</p>
+
+				<p>
+					S'hi pot trobar un llistat dels treballs fets per la banda, que inclouen un <abbr title="Compact Disc">CD</abbr> amb 10 temes, un <abbr title="Extended Play">EP</abbr> amb 5 temes i un <i lang="en">videoclip</i> promocional, tots ells autoproduïts i que es pot consultar detalladament cadascun d'aquests treballs a partir del llistat.
+				</p>
+
+				<p>
+					També s'hi pot trobar una pàgina amb vídeos de Youtube d'algunes cançons en directe enregistrades en alguna de les actuacions fetes pel grup.
+				</p>
+
+				<p>
+					Finalment, a la pàgina d'enllaços es pot consultar les fonts utilitzades per a la realització dels continguts així com un avís legal referent a lús de la pàgina <i lang="en">web</i>.
+				</p>
+			</section>
+
+			<section>
+				<h2>
+					Una mica d’història
+				</h2>
+
+				<youtube-lite video="Fb4a0gPC1PE"></youtube-lite>
+
+				<p>
+					Quan Carlos Duran (<i lang="en">front-man</i> i ànima de Caras Raras) es troba amb Carles Melgarejo (excomponent de Barrock, Tradivàrius i Sòviets i component del grup de versions Hot Rocks), Franck Castillo (excomponent de Tradivàrius i Sòviets i component de Lipstick) i Xavi Oró (excomponent de Barrock, Tradivàrius i Sòviets i component de Coriolà i del grup de versions Hot Rocks), gràcies a Quimo Benavent (cantant de Sòviets), es tanquen a la seva destil·leria particular per elaborar una selecta mixtura carregada de lletres intel·ligents, divertides i crítiques, molt <i lang="en">rock & roll</i> i pinzellades diverses de l'extensa paleta nodrida en les experiències musicals i vitals anteriors dels seus heterodoxos integrants (<i lang="en">pop</i>, progressiu, <i lang="en">funk</i>, <i lang="en">folk-rock</i>).
+				</p>
+
+				<!-- Responsive images: Art direction -->
+				<picture>
+					<source media="(max-width:667px)" srcset="images/d&c-foto-grup-480w.jpg?as=webp" type="image/webp">
+					<source media="(min-width: 668px)" srcset="images/d&c-foto-grup-906w.jpg?as=webp" type="image/webp">
+					<img src="images/d&c-foto-grup-906w.jpg?as=webp" alt="Sessió de fotos per la portada del disc de Duran&Cia." title="" width="906" height="606" loading="lazy">
+				</picture>
+
+				<p>
+					Han realitzat diverses actuacions a sales del circuit de rock de Barcelona i han enregistrat dos treballs discogràfics disponibles a Amazon, Amazon Music i a Spotify i un videoclip promocional.
+				</p>
+
+				<svg width="230" height="90" viewBox="0 0 230 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<line x1="0" x2="100%" y1="1" y2="1" stroke="#5F030E" stroke-width="1"/>
+					<line x1="0" x2="100%" y1="99%" y2="99%" stroke="#5F030E" stroke-width="1"/>
+
+					<path d="M116.231 0.306019C115 0.63002 114.294 1.08002 113.28 2.21402C111.831 3.79802 111.016 5.92202 111.016 8.10002C111.016 9.00002 111.776 13.104 111.994 13.482C112.048 13.572 111.613 13.932 111.016 14.292C108.571 15.786 106.724 17.982 105.909 20.304C105.546 21.366 105.492 21.852 105.492 24.3C105.492 26.712 105.546 27.27 105.909 28.44C106.941 31.734 108.607 34.056 110.617 35.046C111.523 35.496 111.849 35.55 113.37 35.55C114.946 35.55 115.199 35.496 116.268 34.974C116.92 34.668 117.88 34.002 118.423 33.516L119.419 32.652L120.27 33.678C121.157 34.74 122.172 35.334 123.367 35.55L124.055 35.676L126.627 33.03C128.057 31.572 129.235 30.204 129.271 29.988C129.307 29.736 129.072 29.376 128.601 28.908L127.858 28.188L127.224 28.494C125.884 29.124 125.142 28.782 124.417 27.144L124.037 26.298L124.472 25.614C124.707 25.236 125.377 23.994 125.939 22.86C127.152 20.466 128.184 19.008 129.054 18.504C129.633 18.162 129.669 18.09 129.669 17.118C129.669 16.56 129.579 16.002 129.452 15.876C129.307 15.732 128.365 15.66 126.373 15.66C123.693 15.66 123.512 15.678 123.331 16.02C122.968 16.686 123.222 17.748 123.838 18.342C124.49 18.936 124.544 19.314 124.128 20.718C123.838 21.708 123.005 23.4 122.805 23.4C122.751 23.4 121.918 21.402 120.994 18.936C120.053 16.488 119.183 14.238 119.057 13.932C118.821 13.374 118.821 13.374 119.854 12.654C121.882 11.232 123.331 8.80202 123.476 6.57002C123.675 3.51002 122.045 1.06202 119.31 0.288021C118.205 -0.0359802 117.59 -0.0359802 116.231 0.306019ZM119.057 3.78002C119.854 4.73402 120.125 6.48002 119.672 7.93802C119.437 8.73002 118.368 10.08 117.988 10.08C117.59 10.08 116.775 7.32602 116.684 5.67002C116.594 4.39202 116.63 4.17602 116.992 3.72602C117.554 3.02402 118.423 3.04202 119.057 3.78002ZM113.624 18.846C114.402 21.474 116.014 25.92 116.92 27.954C117.753 29.862 117.753 29.934 116.865 30.168C115.453 30.546 114.185 29.034 112.827 25.362C111.849 22.734 111.432 20.628 111.541 18.738C111.559 18.342 112.628 17.1 112.954 17.1C113.044 17.1 113.352 17.892 113.624 18.846Z" fill="#5F030E"/>
+					<path d="M167.067 1.06205C164.622 1.51205 163.228 1.96205 162.612 2.53805C161.96 3.15005 161.924 3.92405 162.503 4.44605C164.495 6.28205 174.981 5.07605 176.122 2.86205C176.285 2.57405 176.412 2.32205 176.43 2.30405C176.539 2.10605 175.923 1.38605 175.434 1.13405C174.546 0.666049 169.512 0.612049 167.067 1.06205Z" fill="#5F030E"/>
+					<path d="M21.0441 2.28594C21.0984 3.34794 21.1528 3.50994 21.4606 3.56394C22.2031 3.70794 22.2756 3.92394 22.2756 6.04794V8.09994L21.2071 7.27194C19.4866 5.93994 17.8567 5.68794 16.1724 6.49794C14.0535 7.52394 12.8039 10.3319 12.3331 15.1919C12.0795 17.7659 12.0795 25.1999 12.3331 27.2699C12.7134 30.3479 13.6189 33.0119 14.7417 34.3439C16.4441 36.3239 19.0701 36.4859 21.2795 34.7399L22.185 34.0199L22.2756 34.7939L22.3661 35.5499H26.2598H30.1535L30.2079 34.4159C30.2622 33.3899 30.226 33.2819 29.8457 33.1379C29.6102 33.0479 29.3205 32.8679 29.1937 32.7239C29.0307 32.5259 28.9764 28.7819 28.9764 17.1719C28.9764 8.76594 28.922 1.70994 28.8677 1.47594C28.7591 1.07994 28.7409 1.07994 24.8654 1.07994H20.9898L21.0441 2.28594ZM21.8228 10.4759L22.2756 10.6739V20.7359V30.8159L21.7323 31.3379C21.0622 32.0219 20.3921 31.9859 19.8488 31.2659C19.4685 30.7619 19.4685 30.5639 19.4142 21.9059C19.378 17.0279 19.4142 12.6359 19.4685 12.1139C19.6677 10.4939 20.537 9.88194 21.8228 10.4759Z" fill="#5F030E"/>
+					<path d="M61.3937 6.26416C60.5063 6.71416 60.1079 7.34416 59.3654 9.59416L58.6953 11.6102V9.16216C58.6772 7.52416 58.6047 6.66016 58.4598 6.51616C58.2244 6.28216 52.6465 6.19216 52.085 6.40816C51.8677 6.49816 51.7953 6.76816 51.7953 7.50616C51.7953 8.35216 51.8677 8.58616 52.3386 9.12616L52.8819 9.73816V20.9882V32.2382L52.4291 32.6522C51.8858 33.1562 51.6142 34.6142 51.9583 35.2622C52.1756 35.6402 52.2118 35.6402 56.4677 35.6042L60.7598 35.5502L60.8142 34.4162C60.8685 33.3182 60.8504 33.2822 60.1803 32.6702L59.4921 32.0402L59.4378 23.9042C59.3835 15.2822 59.4559 13.0142 59.8543 12.4742C60.1803 12.0602 60.615 12.2942 61.0858 13.1582C61.5386 13.9862 61.8827 14.2202 62.6433 14.2202C63.9291 14.2022 64.5087 13.2302 64.6173 10.9262C64.7984 7.36216 63.3496 5.27416 61.3937 6.26416Z" fill="#5F030E"/>
+					<path d="M72.4409 6.13816C70.9378 6.39016 68.9819 7.41616 68.0402 8.46016C67.0622 9.54016 66.6457 10.6562 66.6457 12.1862C66.6457 14.4722 67.3882 15.2102 69.6158 15.0842C71.0646 15.0122 72.1331 14.5802 72.6945 13.8242C72.948 13.4642 73.0748 12.9062 73.1654 11.7182C73.3102 9.81016 73.6 9.25216 74.5598 9.07216C75.1394 8.96416 75.2843 9.01816 75.6465 9.43216C76.0449 9.90016 76.063 10.0622 76.063 12.4022V14.9042L73.9441 15.8402C70.3583 17.4422 69.0543 18.1622 68.0221 19.1702C66.8811 20.2862 66.4284 21.3482 66.1024 23.5622C65.8126 25.5242 65.9575 30.1322 66.3559 31.5902C67.1165 34.3442 68.4929 35.7122 70.7205 35.9462C72.2236 36.1082 73.3284 35.6402 74.8134 34.2362C75.5016 33.6062 76.0811 33.1022 76.1173 33.1382C76.1354 33.1742 76.3709 33.6062 76.6244 34.1102C77.4394 35.6582 79.3953 36.3062 81.7677 35.8202C83.1441 35.5322 83.6693 35.0282 83.6693 34.0022C83.6693 33.4262 83.5606 33.1022 83.2165 32.7602L82.7457 32.2742L82.7638 22.2122C82.7638 10.9442 82.7457 10.7822 81.5323 9.00016C80.2827 7.16416 78.2 6.21016 75.1213 6.06616C74.1976 6.01216 72.9843 6.04816 72.4409 6.13816ZM76.0268 24.0122C75.9724 30.0062 75.9543 30.2402 75.5921 30.7262C75.0669 31.4282 74.1614 31.4282 73.6362 30.7262C73.274 30.2582 73.2559 29.9522 73.2016 26.3702C73.1291 22.2302 73.3284 20.1782 73.8717 19.4402C74.2339 18.9362 75.6283 17.8202 75.9 17.8202C76.0087 17.8202 76.063 20.1422 76.0268 24.0122Z" fill="#5F030E"/>
+					<path d="M97.0709 6.19214C95.8937 6.44414 94.9157 7.03814 93.811 8.17214L92.9961 9.01814L92.9055 7.70414L92.815 6.39014H89.1023H85.3897L85.3354 7.45214C85.2811 8.44214 85.3173 8.55014 85.7882 8.92814L86.2953 9.32414V20.7541V32.2021L85.7882 32.7241C85.3173 33.2101 85.2811 33.3541 85.3354 34.3981L85.3897 35.5501L89.4464 35.6041C92.2716 35.6401 93.5756 35.5861 93.7386 35.4421C93.9016 35.3161 93.9921 34.8661 93.9921 34.2541C93.9921 33.4081 93.9197 33.1741 93.4488 32.6341L92.9055 32.0221V21.8881V11.7361L93.4669 11.2681C94.0102 10.8001 94.9339 10.6561 95.3685 10.9441C95.948 11.3221 95.9843 11.8441 95.9843 22.7701C95.9843 36.7921 95.6039 35.6401 100.168 35.6401C103.102 35.6401 103.228 35.6221 103.428 35.2441C103.735 34.6681 103.5 33.1561 103.011 32.6341L102.595 32.1841L102.504 20.6461L102.413 9.09014L101.852 8.10014C100.874 6.39014 99.2079 5.72414 97.0709 6.19214Z" fill="#5F030E"/>
+					<path d="M32.0913 6.44403C31.4575 6.85803 31.6205 9.03603 32.3268 9.41403L32.7614 9.63003L32.8338 20.7C32.8882 32.868 32.9244 33.192 34.011 34.542C35.659 36.558 38.3756 36.378 41.2551 34.038L42.3779 33.12V34.074C42.3779 35.694 42.2874 35.658 46.4527 35.604L50.0748 35.55L50.1291 34.416C50.1835 33.39 50.1472 33.264 49.6764 32.832L49.1693 32.364L49.0787 19.386L48.9882 6.39003H45.185H41.3819L41.3275 7.56003C41.2732 8.67603 41.3094 8.76603 41.8346 9.27003L42.3779 9.79203V20.106V30.42L41.7984 30.78C41.0016 31.266 40.5307 31.23 40.0055 30.672L39.5709 30.204L39.4803 18.306C39.426 11.754 39.3535 6.37203 39.3354 6.33603C39.2268 6.22803 32.2905 6.31803 32.0913 6.44403Z" fill="#5F030E"/>
+					<path d="M143.705 6.49809C139.902 6.98409 136.769 8.56809 134.704 11.0161C132.893 13.1941 132.277 14.2741 131.535 16.6861C131.1 18.1441 131.046 18.5401 131.046 21.4201C131.028 25.0561 131.227 26.1181 132.422 28.6201C133.02 29.8621 133.454 30.4201 134.722 31.6981C136.08 33.0481 136.569 33.3901 138.199 34.1821C141.061 35.5681 142.672 35.8921 146.421 35.8921C149.862 35.8741 151.402 35.5861 153.539 34.5421C155.114 33.7681 156.871 32.1121 157.559 30.7081C158.537 28.7101 158.465 26.6221 157.396 26.3161C156.78 26.1541 153.629 26.1541 152.995 26.3161C152.416 26.4961 152.126 27.2161 152.126 28.5841C152.126 31.2121 150.569 32.9221 148.178 32.9401C147.019 32.9401 146.168 32.6161 145.643 31.9501L145.244 31.4461V20.7901V10.1341L145.697 9.72009C146.331 9.12609 148.124 9.01809 149.047 9.48609C149.826 9.88209 149.898 10.2781 149.5 11.9881C149.102 13.6441 149.301 14.4541 150.315 15.3721C151.275 16.2361 152.687 16.6321 154.39 16.5241C156.78 16.3621 158.247 15.2461 158.356 13.4461C158.573 10.4041 155.295 7.65009 150.315 6.66009C148.939 6.40809 145.262 6.31809 143.705 6.49809Z" fill="#5F030E"/>
+					<path d="M195.319 6.40799C193.327 6.56999 190.429 7.05599 188.962 7.46999C184.851 8.65799 182.732 10.53 182.95 12.798C183.058 13.86 183.547 14.472 184.706 14.994C187.024 16.02 194.232 15.174 195.156 13.77C195.319 13.518 195.518 12.798 195.591 12.15C195.862 10.008 196.532 9.44999 198.887 9.44999C200.354 9.44999 200.516 9.48599 200.933 9.91799C201.386 10.35 201.404 10.458 201.404 12.672C201.422 13.932 201.386 15.012 201.331 15.066C201.187 15.21 198.85 15.768 194.776 16.668C188.636 18 184.742 19.44 183.42 20.826C181.157 23.202 180.867 29.268 182.877 32.4C184.398 34.794 188.147 36.162 192.512 35.946C194.993 35.82 196.858 35.316 199.357 34.11L201.422 33.12L202.165 33.894C203.704 35.46 205.388 35.91 209.807 35.91C214.316 35.91 215.82 35.478 216.146 34.164C216.291 33.624 215.856 33.084 214.824 32.544L214.244 32.238V22.194C214.244 10.746 214.316 11.394 212.668 9.86399C210.894 8.24399 208.286 7.25399 204.374 6.74999C202.201 6.46199 197.021 6.28199 195.319 6.40799ZM201.422 22.896C201.494 29.196 201.422 29.934 200.698 30.654C200.245 31.104 199.955 31.212 199.14 31.284C197.094 31.446 196.17 30.96 195.754 29.502C195.482 28.494 195.5 23.382 195.79 21.924C196.17 20.016 196.949 19.314 199.575 18.45C200.317 18.216 201.024 18.018 201.15 18C201.313 18 201.386 19.188 201.422 22.896Z" fill="#5F030E"/>
+					<path d="M161.58 6.84004C161.199 7.00204 161.163 7.11004 161.217 8.13604L161.272 9.25204L162.087 9.48604C163.644 9.91804 163.535 9.07204 163.535 21.348V32.202L163.137 32.472C162.92 32.634 162.594 32.76 162.413 32.76C162.231 32.76 161.924 32.922 161.724 33.12C161.254 33.588 161.199 35.352 161.652 35.532C162.087 35.694 177.897 35.658 178.169 35.478C178.531 35.262 178.621 33.858 178.295 33.372C178.15 33.156 177.698 32.868 177.263 32.724L176.484 32.454L176.448 19.872C176.394 7.29004 176.394 7.29004 176.013 6.96604C175.669 6.67804 175.054 6.66004 168.805 6.67804C165.057 6.67804 161.815 6.75004 161.58 6.84004Z" fill="#5F030E"/>
+				</svg>
+
+				<ul>
+					<li>
+						<strong>Carlos Durán</strong><br>
+						Veu i piano
+					</li>
+
+					<li>
+						<strong>Carles Melgarejo</strong><br>
+						Guitarres elèctriques i acústiques, harmònica i veus
+					</li>
+
+					<li>
+						<strong>Xavi Oró</strong><br>
+						Baix i veus
+					</li>
+
+					<li>
+						<strong>Franck Castillo</strong><br>
+						Bateria
+					</li>
+				</ul>
+			</section>
+		</main>
+
+		<footer>
+			<div>
+				<a href="index.html">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="45" width="140">
+						<image href="images/d_c_footer.jpg" width="140" height="45"/>
+
+						<line x1="0" x2="100%" y1="0" y2="0" stroke="#ffffff" stroke-width="1"/>
+						<line x1="0" x2="100%" y1="100%" y2="100%" stroke="#ffffff" stroke-width="1"/>
+					</svg>
+
+					<p>Web oficial del grup Duran&Cia</p>
+				</a>
+
+				<ul>
+					<li><a href="presentacio.html">Presentació</a></li>
+					<li><a href="llistat-treballs.html">Treballs</a></li>
+					<li><a href="videos.html">Vídeos</a></li>
+					<li><a href="enllacos.html">Enllaços</a></li>
+				</ul>
+
+				<ul>
+					<li><a href="https://www.facebook.com/DuranCia-156336397420" target="_blank"><img src="images/facebook-icon.svg" alt="Facebook" width="29" height="29" loading="lazy"></a></li>
+					<li><a href="https://www.youtube.com/user/DuranYCia/videos" target="_blank"><img src="images/youtube-icon.svg" alt="Youtube" width="54" height="44" loading="lazy"></a></li>
+				</ul>
+				
+				<p>
+					Activitat realitzada per Carles Melgarejo Vila, per a l'assignatura Eines <abbr title="HyperText Markup Language">HTML</abbr> i <abbr title="Cascading Style Sheets">CSS</abbr>. Primer semestre del curs 2022-2023
+				</p>
+
+				<p>
+					<abbr title="Copyright">&copy;</abbr> 2022 Tots els drets reservats
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>
